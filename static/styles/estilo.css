@@ -1,1 +1,36 @@
-dsadas
+.social{
+
+  border-radius: 10px;
+  position: fixed;
+  bottom: 15px;
+  width:99%;
+}
+
+.social a{
+
+  color: gainsboro;
+  padding-left: 5px;
+}
+.social a:hover{
+
+  color: #fffdd0;
+}
+
+.social1{
+  border-radius: 10px;
+  font-size: 30px;
+ 
+  position: fixed;
+  padding: 14px ;
+  top  : 15px;
+  width: 99%;
+}
+
+.social1 a{
+color: gainsboro;
+padding-left: 5px;
+}
+.social a:hover{
+
+color: #fffdd0;
+}
