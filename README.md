@@ -1,2 +1,2 @@
 # website
-this is a website full of drip
+This is a Website made with Flask and Bootstrap with drip.
