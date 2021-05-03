@@ -1,2 +1,3 @@
 # website
-This is a Website made with Flask and Bootstrap with drip.
+This is a simple Website made with Flask, Bootstrap and drip.
+Login features coming soon...
