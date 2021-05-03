@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div style="text-align:center;margin-top: 220px;font-size: 40px;color:white;" class="name">
+            <h1>L33T</h1>
+<div id="typed-strings" class="sub">
+    <p>Hacking</p>
+    <p>WebSites</p>
+    <p>Discord.py</p>
+    <p>Developer</p>
+    <p>Python</p>
+    <p>C</p>
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>PHP</p>
+    <p>Arduino</p>
+    <p>Java</p>
+    <p>Javascript</p>
+    <p>Apps</p>
+</div>
+<span id="typed"></span>
+<script src="{{url_for('static', filename='js/index.js')}}"></script>
+{% endblock %}

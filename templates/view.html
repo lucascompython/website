@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Ver todos os utilzadore{% endblock %}
+{% block content %}
+
+    {% for item in values %}
+        <p>Nome: {{item.name}}, Email: {{item.email}}</p>
+    {% endfor %}
+
+
+{% endblock %}
