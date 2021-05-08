@@ -1,0 +1,61 @@
+
+.drena{
+    color: #e5393d;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 1.25;
+  }
+  
+  
+  .headline{
+    color: #eef1f5;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    margin: 8px 0;
+  }
+  
+  .para{
+      color: #B3BBC8;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+  
+  
+  .stats{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background: hsl(0deg 0% 7%)
+    
+  }
+
+  
+
+  .footer {
+    padding: 40px 0 12px;
+    background: #131416;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    
+  }
+
+.margem {
+  margin-left: 250px;
+}
+
+.sub-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 7;
+  border-top: 1px solid hsla(0,0%,100%,.18);
+  margin: 40px 0 0;
+}
