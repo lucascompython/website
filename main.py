@@ -42,8 +42,6 @@ def programming():
     return render_template("programming.html")
 
 
-
-
 @app.route("/hacking/")
 def hacking():
     return render_template("hacking.html")
@@ -51,7 +49,7 @@ def hacking():
 
 
 
-##### coming soon login and logout
+
 
 """
 @app.route("/view")
