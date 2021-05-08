@@ -1,6 +1,68 @@
 {% extends "base.html" %}
+
+
+{% block head %}
+<style>
+    body{
+    background: #1D1E22;
+    margin: 0 0 100px;
+    }
+    html{
+        font-family: Inter,"Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+        word-spacing: 1px;
+        position: relative;
+        min-height: 100%;
+    }
+</style>
+
+<link rel="stylesheet" href= "{{ url_for('static',filename='styles/bot.css') }}" />
+{% endblock %}
+
+
 {% block title %}Discord Bot{% endblock %}
+
 {% block content %}
+<br><br><br><br><br><br><br><br><br><br>
+
+<div class="stats">
+    <br><br>
+        <p class="drena" align="center">MEET L33T Bot</p>  
+        <h1 class="headline" align="center">O #1 bot no Discord</h1>
+        <h6 align="center" class="para" style="color: #bec3cd">Em mais de 10 servers, e a espera de entrar no teu.</h6>
+        <br><br>
+        <div class="numbers">
+        <h1 align="center" style="color:white;">status do drip</h1>
+        <br>
+</div>
+
+
+
+
+</div>
+
+<br><br><br><br>
+{% block icons %}
+style="text-align:right;"
+{% endblock %}
+<div class="aviao footer">
+    
+    <img class="margem imagem" src="{{ url_for('static', filename='ICON.png')}}" width=75 height=75 alt="Icon do drip">
+
+    
+    <p class="margem" align="left" style="color: white;">L33T Bot torna é um bot com dezenas de utilidades e coisas engraçadas! <br>Adiciona-o ao ter server hoje e começa a aproveitar!<br><br>Para negocios contacte <a style="color: #7289da;" href="mailto:lucasdelinhares@gmail.com">lucasdelinhares@gmail.com</a></p>
+    
+    
+    
+    <div class="sub-footer">
+        <p style="color:white;">
+            <br>
+            © 2021 Drip Inc.
+          </p>
+    
+    
+    </div>
+</div>
+
 
 
 {% endblock %}
