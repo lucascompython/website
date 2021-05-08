@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block title %}Discord Bot{% endblock %}
 {% block content %}
-<h1>O gui nao tem drip</h1>
-
+<div style="text-align:center;margin-top: 220px;font-size: 40px;color:white;" class="name">
+    
+    <div id="typed-strings" class="sub">
+    <p>O gui não tem drip.</p>
+    
+    </div>
+    <span id="typed"></span>
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
 {% endblock %}
