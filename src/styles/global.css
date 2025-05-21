@@ -1,156 +1,239 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-
-:root {
-    --accent: #2337ff;
-    --accent-dark: #000d8a;
-    --black: 15, 18, 25;
-    --gray: 96, 115, 159;
-    --gray-light: 229, 233, 240;
-    --gray-dark: 34, 41, 57;
-    --gray-gradient: rgba(var(--gray-light), 50%), #fff;
-    --box-shadow:
-        0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-        0 16px 32px rgba(var(--gray), 33%);
-}
 @font-face {
     font-family: "Berkeley Mono";
-    src: url("/fonts/BerkeleyMono-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    src:
+        url("/fonts/BerkeleyMono-Regular.woff2") format("woff2"),
+        url("/fonts/BerkeleyMono-Regular.woff") format("woff");
 }
+
 @font-face {
     font-family: "Berkeley Mono";
-    src: url("/fonts/BerkeleyMono-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
-    font-display: swap;
+    src:
+        url("/fonts/BerkeleyMono-Bold.woff2") format("woff2"),
+        url("/fonts/BerkeleyMono-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Berkeley Mono";
+    font-weight: 400;
+    font-style: italic;
+    src:
+        url("/fonts/BerkeleyMono-Italic.woff2") format("woff2"),
+        url("/fonts/BerkeleyMono-Italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Berkeley Mono";
+    font-weight: 700;
+    font-style: italic;
+    src:
+        url("/fonts/BerkeleyMono-BoldItalic.woff2") format("woff2"),
+        url("/fonts/BerkeleyMono-BoldItalic.woff") format("woff");
+}
+
+:root {
+    --color: #402000;
+    --background-color: #fff0f8;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color: #00ff80;
+        --background-color: #101010;
+    }
+}
+
+:root {
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--color);
+
+    font-family: "Berkeley Mono", monospace;
+}
+
+* {
+    box-sizing: inherit;
 }
 
 body {
-    font-family: "Berkeley Mono", monospace;
     margin: 0;
-    padding: 0;
-    text-align: left;
-    background: linear-gradient(var(--gray-gradient)) no-repeat;
-    background-size: 100% 600px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    color: rgb(var(--gray-dark));
-    font-size: 20px;
-    line-height: 1.7;
+    padding: 0 max(2rem, (100vw - 40rem) / 2);
 }
-main {
-    width: 720px;
-    max-width: calc(100% - 2em);
-    margin: auto;
-    padding: 3em 1em;
+
+nav {
+    font-size: 3rem;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0 0 0.5rem 0;
-    color: rgb(var(--black));
-    line-height: 1.2;
+
+nav,
+footer {
+    padding: 1rem 0;
+    text-align: center;
 }
-h1 {
-    font-size: 3.052em;
-}
-h2 {
-    font-size: 2.441em;
-}
-h3 {
-    font-size: 1.953em;
-}
-h4 {
-    font-size: 1.563em;
-}
-h5 {
-    font-size: 1.25em;
-}
-strong,
-b {
-    font-weight: 700;
-}
-a {
-    color: var(--accent);
-}
-a:hover {
-    color: var(--accent);
-}
-p {
-    margin-bottom: 1em;
-}
-.prose p {
-    margin-bottom: 2em;
-}
-textarea {
-    width: 100%;
-    font-size: 16px;
-}
-input {
-    font-size: 16px;
-}
-table {
-    width: 100%;
-}
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-code {
-    padding: 2px 5px;
-    background-color: rgb(var(--gray-light));
-    border-radius: 2px;
-}
-pre {
-    padding: 1.5em;
-    border-radius: 8px;
-}
-pre > code {
-    all: unset;
-}
-blockquote {
-    border-left: 4px solid var(--accent);
-    padding: 0 0 0 20px;
-    margin: 0px;
-    font-size: 1.333em;
-}
+
 hr {
-    border: none;
-    border-top: 1px solid rgb(var(--gray-light));
+    border: 0.0625rem solid var(--color);
 }
-@media (max-width: 720px) {
-    body {
-        font-size: 18px;
-    }
-    main {
-        padding: 1em;
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style-type: "* ";
+}
+
+img {
+    width: 100%;
+}
+
+img,
+pre {
+    border: 0.25em solid;
+}
+
+article h1 {
+    margin-block: 0.67em;
+    font-size: 2em;
+}
+
+a:not(article a),
+article h1 > a,
+article h2 > a,
+article h3 > a,
+article h4 > a,
+article h5 > a,
+article h6 > a,
+a.footnote {
+    text-decoration: inherit;
+}
+
+a:hover {
+    text-decoration: inherit;
+    background-color: var(--color);
+    color: var(--background-color);
+}
+
+a#resume {
+    display: block;
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    border: 0.25rem solid;
+}
+
+a#resume:hover {
+    border-color: var(--color);
+}
+
+#ring {
+    font-size: 2rem;
+}
+
+/* code blocks */
+
+:root {
+    --code-color: #303030;
+    --code-background-color: #f8e8f0;
+
+    --code-gray: #808080;
+    --code-red: #d8031a;
+    --code-orange: #ff8041;
+    --code-yellow: #cfb015;
+    --code-green: #01c26d;
+    --code-blue: #156ebb;
+    --code-purple: #982fcd;
+    --code-pink: #ff4785;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --code-color: #d0d0d0;
+        --code-background-color: #181818;
+
+        --code-gray: #808080;
+        --code-red: #ec475a;
+        --code-orange: #ffaf00;
+        --code-yellow: #ffd300;
+        /* --code-green: #171916; */
+        --code-blue: #397bf6;
+        --code-purple: #a965ec;
+        /* --code-pink: #bdb2ff; */
     }
 }
 
-.sr-only {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-    clip: rect(1px 1px 1px 1px);
-    /* maybe deprecated but we need to support legacy browsers */
-    clip: rect(1px, 1px, 1px, 1px);
-    /* modern browsers, clip-path works inwards from each corner */
-    clip-path: inset(50%);
-    /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
-    white-space: nowrap;
+:not(pre) > code::before,
+:not(pre) > code::after {
+    content: "`";
+
+    color: var(--code-gray);
+}
+
+pre {
+    background-color: var(--code-background-color);
+
+    padding: 1rem;
+
+    overflow-x: auto;
+}
+
+code {
+    font-family: "Berkeley Mono", monospace;
+
+    color: var(--code-color);
+}
+
+code.highlighted .attribute {
+    color: var(--code-blue);
+}
+
+code.highlighted .comment {
+    color: var(--code-gray);
+}
+
+code.highlighted .constant {
+    color: var(--code-pink);
+}
+
+code.highlighted .function,
+code.highlighted .constructor {
+    color: var(--code-blue);
+}
+
+code.highlighted .keyword,
+code.highlighted .builtin {
+    color: var(--code-orange);
+}
+
+code.highlighted .module {
+    color: var(--code-reds);
+}
+
+code.highlighted .operator {
+    color: var(--code-orange);
+}
+
+code.highlighted .punctuation {
+    color: var(--code-gray);
+}
+
+code.highlighted .string {
+    color: var(--code-green);
+}
+
+code.highlighted .number {
+    color: var(--code-yellow);
+}
+
+code.highlighted .tag {
+    color: var(--code-blue);
+}
+
+code.highlighted .property {
+    color: var(--code-purple);
+}
+
+code.highlighted .type {
+    color: var(--code-pink);
 }
