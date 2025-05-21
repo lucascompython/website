@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <style>
+    @font-face {
+      font-family: 'BerkeleyMono';
+      src: url('/fonts/BerkeleyMono-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    text {
+      font-family: 'BerkeleyMono', monospace;
+      font-weight: 500;
+      font-size: 24px;
+      fill: #00ff80;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+  </style>
+  <text x="16" y="20">L</text>
+</svg>
