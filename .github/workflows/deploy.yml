@@ -1,8 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
+  # Trigger the workflow every time you push to the `main` branch
   push:
     branches: [master]
+  # Allow running this workflow manually from the Actions tab
   workflow_dispatch:
 
 # Set permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -28,18 +30,22 @@ jobs:
         with:
           bun-version: latest
 
-      - name: Setup Typst
+      - name: Build resumes with Typst
         uses: lvignoli/typst-action@main
         with:
-          typst-version: "latest"
+          source_file: |
+            resume/resume_yaml_en.typ
+            resume/resume_yaml_pt.typ
+          output_dir: public
+          args: compile
+
+      - name: Rename resume files
+        run: |
+          mv public/resume_yaml_en.pdf "public/CV Lucas de Linhares en.pdf"
+          mv public/resume_yaml_pt.pdf "public/CV Lucas de Linhares pt.pdf"
 
       - name: Install dependencies
         run: bun install
-
-      - name: Build resumes
-        run: |
-          typst compile resume/resume_yaml_en.typ public/CV\ Lucas\ de\ Linhares\ en.pdf
-          typst compile resume/resume_yaml_pt.typ public/CV\ Lucas\ de\ Linhares\ pt.pdf
 
       - name: Build website
         run: bun run build
