@@ -8,3 +8,5 @@ Features:
 - ✅ Sitemap support
 - ✅ RSS Feed support
 - ✅ Markdown support
+- ✅ Typst Resume
+- ✅ Prefetching
