@@ -10,7 +10,7 @@ export const ui = {
     hi: "Hi, I'm",
     welcome: "Welcome to my personal website!",
     about:
-      "I'm a software developer and computer sciente student based in Portugal",
+      "I'm a software developer and computer science student based in Portugal",
     resume: "Resume",
     "resume-path": "/CV Lucas de Linhares en.pdf",
     "about-me": "About Me",
