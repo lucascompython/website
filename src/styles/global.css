@@ -91,7 +91,7 @@ img {
 
 img,
 pre {
-    border: 0.25em solid #00ff80;
+    border: 0.25em solid var(--color);
 }
 
 article h1 {
