@@ -35,22 +35,19 @@ jobs:
 
       - name: Install dependencies
         run: bun install
-        working-directory: website
 
       - name: Build resumes
         run: |
           typst compile resume/resume_yaml_en.typ public/CV\ Lucas\ de\ Linhares\ en.pdf
           typst compile resume/resume_yaml_pt.typ public/CV\ Lucas\ de\ Linhares\ pt.pdf
-        working-directory: website
 
       - name: Build website
         run: bun run build
-        working-directory: website
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: website/dist
+          path: dist
 
   deploy:
     environment:
