@@ -11,7 +11,8 @@ type Props = CollectionEntry<"blog">["data"] & {
 
 const { title, description, pubDate, updatedDate, slug } = Astro.props;
 
-const ogImage = new URL(`/og-image/${slug}.png`, Astro.site).toString();
+console.log("slug:", slug);
+const ogImage = new URL(`/blog/${slug}.png`, Astro.site).toString();
 ---
 
 <html lang="en">
