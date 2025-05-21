@@ -36,13 +36,11 @@ jobs:
           source_file: |
             resume/resume_yaml_en.typ
             resume/resume_yaml_pt.typ
-          output_dir: public
-          args: compile
 
       - name: Rename resume files
         run: |
-          mv public/resume_yaml_en.pdf "public/CV Lucas de Linhares en.pdf"
-          mv public/resume_yaml_pt.pdf "public/CV Lucas de Linhares pt.pdf"
+          mv resume/resume_yaml_en.pdf "public/CV Lucas de Linhares en.pdf"
+          mv resume/resume_yaml_pt.pdf "public/CV Lucas de Linhares pt.pdf"
 
       - name: Install dependencies
         run: bun install
