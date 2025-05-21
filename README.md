@@ -11,3 +11,4 @@ Features:
 - ✅ Markdown support
 - ✅ Typst Resume
 - ✅ Prefetching
+- ✅ Automated CI/CD with GitHub Actions
