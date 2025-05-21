@@ -21,4 +21,8 @@ export default defineConfig({
     locales: ["en", "pt"],
     defaultLocale: "en",
   },
+  prefetch: {
+    defaultStrategy: "load",
+    prefetchAll: true,
+  },
 });
