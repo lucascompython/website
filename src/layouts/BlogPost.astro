@@ -5,14 +5,18 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 
-type Props = CollectionEntry<"blog">["data"];
+type Props = CollectionEntry<"blog">["data"] & {
+    slug: string;
+};
 
-const { title, description, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate, slug } = Astro.props;
+
+const ogImage = new URL(`/og-image/${slug}.png`, Astro.site).toString();
 ---
 
 <html lang="en">
     <head>
-        <BaseHead title={title} description={description} />
+        <BaseHead title={title} description={description} image={ogImage} />
         <style>
             .title {
                 margin-bottom: 1em;
