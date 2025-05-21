@@ -2,6 +2,8 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 
+import playformCompress from "@playform/compress";
+
 // https://astro.build/config
 export default defineConfig({
   markdown: {
@@ -10,7 +12,7 @@ export default defineConfig({
     },
   },
   site: "https://lucasdelinhares.com",
-  integrations: [sitemap()],
+  integrations: [sitemap(), playformCompress()],
   i18n: {
     locales: ["en", "pt"],
     defaultLocale: "en",
