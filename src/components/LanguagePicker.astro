@@ -1,0 +1,19 @@
+---
+import { getLangFromUrl } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+---
+
+<select onchange="window.location.href=this.value">
+    <option selected={lang === "en"} value="/">🇬🇧&emsp;English</option>
+    <option selected={lang === "pt"} value="pt">🇵🇹&emsp;Português</option>
+</select>
+
+<style>
+    select {
+        background-color: transparent;
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+        color: inherit;
+    }
+</style>

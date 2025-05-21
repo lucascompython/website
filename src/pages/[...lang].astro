@@ -1,0 +1,130 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import LanguagePicker from "../components/LanguagePicker.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const posts = (await getCollection("blog")).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+export function getStaticPaths() {
+    return [
+        { params: { lang: "/" } },
+        { params: { lang: "/pt" } },
+        { params: { lang: undefined } },
+    ];
+}
+
+const t = useTranslations(getLangFromUrl(Astro.url));
+---
+
+<BaseLayout>
+    <div id="title">
+        <h1>👋 {t("hi")} Lucas!</h1>
+        <LanguagePicker />
+    </div>
+    <hr />
+    <p>{t("welcome")}</p>
+    <p>
+        {t("about")}
+    </p>
+    <a id="resume" href="/resume.pdf">📄 {t("resume")}</a>
+
+    <h2>👨‍💻 {t("about-me")}</h2>
+    <p>
+        {t("about-me.passion")}
+        <br />
+        {t("interests")}
+    </p>
+    <ul>
+        <li>{t("interests.web_dev")}</li>
+        <li>{t("interests.graphics")}</li>
+        <li>{t("interests.backend")}</li>
+        <li>{t("interests.oss")}</li>
+        <li>{t("interests.lowlevel")}</li>
+    </ul>
+
+    <h2>🛣️ {t("journey")}</h2>
+    <p>
+        {t("journey.journey")}
+        <br />
+        {t("journey.focus")}
+    </p>
+    <h2>
+        <a href="blog/">
+            📝 {t("thoughts")}
+        </a>
+    </h2>
+    <ul>
+        {
+            posts.map((post) => (
+                <li>
+                    <a href={`/blog/${post.id}/`}>
+                        <FormattedDate date={post.data.pubDate} /> -
+                        <b>{post.data.title}</b>
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+
+    <h2>🛠️ {t("projects")}</h2>
+    <ul>
+        <li>
+            <a href="https://github.com/lucascompython/critbot">
+                <strong>CritBot</strong> - {t("projects.critbot")}
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/lucascompython/particle-simulation-3d">
+                <strong>{t("projects.particle-simulation-title")}</strong> - {
+                    t("projects.particle-simulation")
+                }
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/lucascompython/auto-spammer">
+                <strong>Auto Spammer</strong> - {t("projects.auto-spammer")}
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/lucascompython/critlang">
+                <strong>CritLang</strong> - {t("projects.critlang")}
+            </a>
+        </li>
+    </ul>
+
+    <h2>💬 {t("contact")}</h2>
+    <ul>
+        <li>
+            <a href="mailto:lucasdelinhares@gmail.com">
+                <strong>Email</strong> - lucasdelinhares@gmail.com
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/lucascompython">
+                <strong>GitHub</strong> - lucascompython
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/lucas-de-linhares-269637214/">
+                <strong>Linkedin</strong> - /in/lucas-de-linhares
+            </a>
+        </li>
+    </ul>
+</BaseLayout>
+
+<style>
+    a#resume {
+        display: block;
+        text-align: center;
+        padding: 0.25rem 0.5rem;
+        border: 0.25rem solid;
+    }
+    div#title {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>

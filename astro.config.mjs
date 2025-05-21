@@ -6,4 +6,8 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://lucasdelinhares.com",
   integrations: [sitemap()],
+  i18n: {
+    locales: ["en", "pt"],
+    defaultLocale: "en",
+  },
 });
