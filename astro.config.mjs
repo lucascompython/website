@@ -15,6 +15,11 @@ console.log("Done!");
 
 // https://astro.build/config
 export default defineConfig({
+  markdown: {
+    shikiConfig: {
+      theme: "dracula-soft",
+    },
+  },
   site: "https://lucasdelinhares.com",
   integrations: [sitemap()],
   i18n: {
