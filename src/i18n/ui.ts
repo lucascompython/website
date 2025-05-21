@@ -12,6 +12,7 @@ export const ui = {
     about:
       "I'm a software developer and computer sciente student based in Portugal",
     resume: "Resume",
+    "resume-path": "/CV Lucas de Linhares en.pdf",
     "about-me": "About Me",
     "about-me.passion":
       "I'm passionate about building elegant solutions to complex problems",
@@ -43,6 +44,7 @@ export const ui = {
     about:
       "Sou um desenvolvedor de software e estudante de informática baseado em Portugal",
     resume: "Currículo",
+    "resume-path": "/CV Lucas de Linhares pt.pdf",
     "about-me": "Sobre Mim",
     "about-me.passion":
       "Sou apaixonado por construir soluções elegantes para problemas complexos",

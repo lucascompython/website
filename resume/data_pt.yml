@@ -1,0 +1,95 @@
+personal:
+  name: Lucas de Linhares
+  phone: null
+  email: lucasdelinhares@gmail.com
+  linkedin: linkedin.com/in/lucas-linhares
+  linkedin_url: linkedin.com/in/lucas-linhares-269637214
+  site: lucasdelinhares.com
+  github: github.com/lucascompython
+education:
+- name: Instituto Politécnico de Viana do Castelo
+  degree: Curso Técnico Superior Profissional em Tecnologias e Programação de Sistemas
+    de Informação
+  location: Viana do Castelo, PT
+  date: Set. 2023 - Mai 2025
+- name: Escola Secundária de Monserrate
+  degree: Curso Profissional em Eletrónica, Automação e Comando
+  location: Viana do Castelo, PT
+  date: Set. 2020 - Jul 2023
+experience:
+- role: Estágio em Desenvolvimento Web - Desenvolvimento de Plataforma Interna
+  name: JCC - Diagnostic Imaging
+  location: Viana do Castelo, PT
+  date: Fev 2025 - Jun 2025
+  points:
+  - Desenvolvi uma plataforma interna dinâmica utilizando Rust, Actix-Web, Svelte,
+    TailwindCSS e MySQL/MariaDB, com gestão documental e ferramentas de comunicação
+    empresariais utilizada diariamente por todos os funcionários
+  - Implementei sistemas para acompanhamento de prazos, controlo de acesso baseado
+    em funções e notificações para melhorar a eficiência do fluxo de trabalho
+  - Desenvolvi um sistema de marcação de férias permitindo aos funcionários solicitar
+    tempo livre e aos administradores gerir os períodos de férias de toda a empresa
+  - Criei ferramentas de comunicação para os administradores enviarem anúncios para
+    toda a empresa
+  - Construí um sistema flexível onde os administradores podem criar e gerir páginas
+    com campos personalizáveis para várias necessidades de gestão documental
+- role: Estágio em Machine Learning
+  name: Ctrl + Alt DEV
+  location: Viana do Castelo, PT
+  date: Mai. 2023 - Jul 2023
+  points:
+  - Desenvolvi um modelo de machine learning utilizando TensorFlow, NumPy, Pandas
+    e SciKit-Learn para prever necessidades de manutenção de máquinas fabris, melhorando
+    a eficiência e reduzindo custos
+- role: Estágio em Desenvolvimento Web e PLC
+  name: Ctrl + Alt DEV
+  location: Viana do Castelo, PT
+  date: Mai 2022 - Jul 2022
+  points:
+  - Melhorei um projeto full-stack para gestão de máquinas utilizando Node.js, Adonis,
+    React.js e PostgreSQL
+  - Integrei Controladores Lógicos Programáveis (PLCs) com o sistema existente
+  - Contribuí para o design de funcionalidades, depuração e resolução de problemas
+projects:
+- name: Plataforma de Suporte para Autismo
+  skills: Go, PostgreSQL, Nginx, React, Docker
+  date: Set 2023 - Jan 2024
+  points:
+  - Fui selecionado como um dos três voluntários para um projeto universitário especial
+    oriundo dos Países Baixos, com o objetivo de melhorar a vida de indivíduos autistas
+    através da tecnologia
+  - Foquei-me na resolução de problemas de acesso ao FreshDesk na plataforma, implementando
+    soluções, fazendo deploy no servidor de produção e documentando o processo para
+    a criação de novas automações
+- name: E-commerce Freelance
+  skills: React, TypeScript, Django, Python, PostgreSQL, Stripe
+  date: Nov 2020 - Presente
+  points:
+  - Desenvolvo e mantenho um website de e-commerce completamente funcional desde o
+    design até à implementação
+  - Implemento funcionalidades para vendas, gestão de catálogo de produtos e otimização
+    do site
+- name: Bot para Discord
+  skills: Python, PostgreSQL
+  date: Set 2020 - Presente
+  points:
+  - Desenvolvi um bot para Discord rico em funcionalidades utilizando a API mais recente
+  - Implementei um sistema de internacionalização (i18n) personalizado, com suporte
+    a múltiplos idiomas
+  - Integrei com APIs externas incluindo YouTube Dislike API e Sponsorblock para melhorar
+    a experiência do utilizador
+  - Construí funcionalidades avançadas de áudio incluindo filtros, texto para fala
+    e recomendação automática de música
+  - Suporte para múltiplas plataformas como YouTube, Spotify, Apple Music, Twitch,
+    SoundCloud, Vimeo e Bandcamp
+  - Desenvolvi capacidades de transferência de media com conversão automática para
+    mp3 a 320kbps de bitrate
+skills:
+- category: Linguagens
+  skills: Python, Rust, JavaScript, TypeScript, HTML, CSS, C, SQL, Go, C#, Java, Scripting
+    de Shell
+- category: Frameworks
+  skills: React, Node.js, Tailwind CSS, Svelte, Astro, FastAPI, Django, Tauri, Actix,
+    Angular, Ionic, TensorFlow, SciKit-Learn, Stripe
+- category: Ferramentas de Desenvolvimento
+  skills: Git, Docker, GitHub, GitHub Actions, Netlify, Vercel, Linux

@@ -10,11 +10,7 @@ const posts = (await getCollection("blog")).sort(
 );
 
 export function getStaticPaths() {
-    return [
-        { params: { lang: "/" } },
-        { params: { lang: "/pt" } },
-        { params: { lang: undefined } },
-    ];
+    return [{ params: { lang: "/" } }, { params: { lang: "/pt" } }];
 }
 
 const t = useTranslations(getLangFromUrl(Astro.url));
@@ -30,7 +26,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
     <p>
         {t("about")}
     </p>
-    <a id="resume" href="/resume.pdf">📄 {t("resume")}</a>
+    <a id="resume" href={t("resume-path")}>📄 {t("resume")}</a>
 
     <h2>👨‍💻 {t("about-me")}</h2>
     <p>
