@@ -148,17 +148,29 @@ Both implementations provide good error messages when there are issues with the 
 
 
 ### API Ergonomics
-- Resource management (buffers, textures, etc.)
-- Pipeline creation and management
-- Command encoding
-- Error handling approaches
+
+When it comes to resource management, both implementations are pleasant to work with and provide clear APIs for creating and managing GPU resources. However, one major pain point I encountered when using Zig is how C enums are translated. Instead of becoming Zig enums, they are represented as their own structs, which makes the code more verbose and harder to type. 
+
+In contrast, `wgpu` is designed primarily for Rust, and its API feels very idiomatic and ergonomic. Overall, the Rust experience is smoother and more enjoyable from an API ergonomics perspective.
 
 ### GUI Integration
-- egui vs. imgui comparison
-  - API style and ergonomics
-  - Feature comparison
-  - Performance characteristics
-  - Customization capabilities
+
+#### Getting Started and API Experience
+egui feels easier to get started with compared to ImGui. While ImGui isn't particularly hard to work with, there are additional steps involved. Since ImGui is built with C++, I had to generate C bindings as an extra build step. The overall API is a C API, which, while still pleasant to work with and easy to read and write, is not very ergonomic compared to native language APIs.
+
+egui, on the other hand, is Rust and Rust only. The API is much more ergonomic and idiomatic to Rust developers. There's no additional build step required - it just works out of the box and integrates seamlessly with the rest of the Rust ecosystem.
+
+#### Styling and Visual Appeal
+Both egui and ImGui offer ways to customize styles and appearance. However, in my opinion, egui's default styles are modern and good-looking, while ImGui's defaults feel old and square. I had to modify the ImGui styles to achieve a more modern look, whereas egui looked great right out of the box.
+
+#### Cross-Platform Development
+egui offers eframe, the egui framework that provides a really simple and straightforward way to make an app for both web and native platforms. With ImGui, it's a bit harder to get web support working, requiring more manual setup and configuration.
+
+#### Community and Ecosystem
+ImGui has been around for much longer and has a much larger community, with extensive documentation, examples, and third-party extensions. However, egui has quickly become one of the most popular GUI libraries in the Rust ecosystem and continues to grow rapidly.
+
+#### Performance and Features
+Both libraries perform well for immediate mode GUIs. ImGui's maturity shows in its extensive feature set and battle-tested reliability across many projects. egui, while newer, provides excellent WebGPU integration and supports both native and web platforms seamlessly.
 
 ### Community & Ecosystem
 - Library maturity and stability
