@@ -7,89 +7,109 @@ personal:
   site: lucasdelinhares.com
   github: github.com/lucascompython
 education:
-- name: Polytechnic Institute of Viana do Castelo
-  degree: Higher Professional Technical Course in Information Systems Technologies
-    and Programming
-  location: Viana do Castelo, PT
-  date: Sep. 2023 - May 2025
-- name: Monserrate Secondary School
-  degree: Professional Course in Electronics, Automation and Control
-  location: Viana do Castelo, PT
-  date: Sep. 2020 - Jul 2023
+  - name: Polytechnic Institute of Viana do Castelo
+    degree: Bachelor's Degree in Network and Computer Systems Engineering
+    location: Viana do Castelo, PT
+    date: Sep. 2025 - Present
+  - name: Polytechnic Institute of Viana do Castelo
+    degree:
+      Higher Professional Technical Course in Information Systems Technologies
+      and Programming
+    location: Viana do Castelo, PT
+    date: Sep. 2023 - May 2025
+  - name: Monserrate Secondary School
+    degree: Professional Course in Electronics, Automation and Control
+    location: Viana do Castelo, PT
+    date: Sep. 2020 - Jul 2023
 experience:
-- role: Web Development Internship - Internal Platform Development
-  name: JCC - Diagnostic Imaging
-  location: Viana do Castelo, PT
-  date: Fev 2025 - June 2025
-  points:
-  - Developed a dynamic internal platform using Rust, Actix-Web, Svelte, TailwindCSS
-    and MySQL/MariaDB, initially designed as a document management system, evolving
-    into a comprehensive daily tool for all employees
-  - Implemented systems for due date tracking, role-based access control, and notifications
-    to enhance workflow efficiency
-  - Developed a vacation booking system allowing employees to request time off and
-    administrators to manage company-wide vacation schedules
-  - Created communication tools for administrators to send company-wide announcements
-  - Built a flexible system where administrators can create and manage pages with
-    customizable fields for various document management needs
-- role: Machine Learning Internship
-  name: Ctrl + Alt DEV
-  location: Viana do Castelo, PT
-  date: May. 2023 - July 2023
-  points:
-  - Developed a machine learning model using TensorFlow, NumPy, Pandas and SciKit-Learn
-    to predict maintenance needs of factory machines, improving efficiency and reducing
-    costs
-- role: Web Development and PLC Internship
-  name: Ctrl + Alt DEV
-  location: Viana do Castelo, PT
-  date: May 2022 - July 2022
-  points:
-  - Enhanced full-stack project for machine management using Node.js, Adonis, React.js
-    and PostgreSQL
-  - Integrated Programmable Logic Controllers (PLCs) with the existing system
-  - Contributed to feature design, debugging, and troubleshooting
+  - role: Web Development Internship - Internal Platform Development
+    name: JCC - Diagnostic Imaging
+    location: Viana do Castelo, PT
+    date: Fev 2025 - June 2025
+    points:
+      - Developed a dynamic internal platform using Rust, Actix-Web, Svelte, TailwindCSS
+        and MySQL/MariaDB, initially designed as a document management system, evolving
+        into a comprehensive daily tool for all employees
+      - Implemented systems for due date tracking, role-based access control, and notifications
+        to enhance workflow efficiency
+      - Developed a vacation booking system allowing employees to request time off and
+        administrators to manage company-wide vacation schedules
+      - Created communication tools for administrators to send company-wide announcements
+      - Built a flexible system where administrators can create and manage pages with
+        customizable fields for various document management needs
+  - role: Machine Learning Internship
+    name: Ctrl + Alt DEV
+    location: Viana do Castelo, PT
+    date: May. 2023 - July 2023
+    points:
+      - Developed a machine learning model using TensorFlow, NumPy, Pandas and SciKit-Learn
+        to predict maintenance needs of factory machines, improving efficiency and reducing
+        costs
+  - role: Web Development and PLC Internship
+    name: Ctrl + Alt DEV
+    location: Viana do Castelo, PT
+    date: May 2022 - July 2022
+    points:
+      - Enhanced full-stack project for machine management using Node.js, Adonis, React.js
+        and PostgreSQL
+      - Integrated Programmable Logic Controllers (PLCs) with the existing system
+      - Contributed to feature design, debugging, and troubleshooting
 projects:
-- name: Autism Support Automation Platform
-  skills: Go, PostgreSQL, Nginx, React, Docker
-  date: Sep 2023 - Jan 2024
-  points:
-  - Selected as one of three volunteers for a special university project originating
-    from the Netherlands, aimed at enhancing the lives of autistic individuals through
-    technology
-  - Focused on resolving access issues to FreshDesk on the platform, implementing
-    solutions, deploying on the production server, and documenting the process for
-    creating new automations
-  - Performed a careful analysis of the code, configuration files, and structures
-    to identify and correct errors encountered during testing
-- name: Freelance E-commerce
-  skills: React, TypeScript, Django, Python, PostgreSQL, Stripe
-  date: Nov 2020 - Present
-  points:
-  - Develop and maintain a fully functional e-commerce website from design to deployment
-  - Implement features for sales, product catalog management, and site optimization
-- name: Discord Bot
-  skills: Python, PostgreSQL
-  date: Sep 2020 - Present
-  points:
-  - Developed a feature-rich Discord bot using the latest API with support for both
-    slash and prefixed commands
-  - Implemented a custom internationalization (i18n) system, supporiting multiple
-    languages
-  - Integrated with external APIs including YouTube Dislike API and Sponsorblock to
-    enhance user experience
-  - Built advanced audio functionality including filters, text-to-speech, and music
-    auto-recommendation
-  - Support for multiple platforms like YouTube, Spotify, Apple Music, Twitch, SoundCloud,
-    Vimeo, and Bandcamp
-  - Developed media download capabilites with automatic format conversion to mp3 at
-    320kbps bitrate
+  - name: Autism Support Automation Platform
+    skills: Go, PostgreSQL, Nginx, React, Docker
+    date: Sep 2023 - Jan 2024
+    points:
+      - Selected as one of three volunteers for a special university project originating
+        from the Netherlands, aimed at enhancing the lives of autistic individuals through
+        technology
+      - Focused on resolving access issues to FreshDesk on the platform, implementing
+        solutions, deploying on the production server, and documenting the process for
+        creating new automations
+      - Performed a careful analysis of the code, configuration files, and structures
+        to identify and correct errors encountered during testing
+  - name: Automatic Cocktail Machine
+    skills: Python, Raspberry Pi, FastAPI, React, PLC, Electronics
+    date: Sep 2022 - May 2023
+    points:
+      - Built an automatic cocktail machine with a touch HMI where users could select
+        the desired cocktail; the system transported bottles along an axle that moved
+        them under three dispensing taps for ingredient dosing
+      - Designed and 3D-printed custom mechanical parts and three peristaltic pumps (one
+        per tap)
+      - Implemented PLC control logic to coordinate axle motion and pump activation for
+        precise ingredient dispensing
+      - Developed an interactive web UI hosted on a Raspberry Pi used for both monitoring
+        and for remotely ordering cocktails
+      - Implemented a custom communication protocol between the Raspberry Pi UI and the
+        PLC to exchange commands and telemetry
+  - name: Freelance E-commerce
+    skills: React, TypeScript, Django, Python, PostgreSQL, Stripe
+    date: Nov 2020 - Present
+    points:
+      - Develop and maintain a fully functional e-commerce website from design to deployment
+      - Implement features for sales, product catalog management, and site optimization
+  - name: Discord Bot
+    skills: Python, PostgreSQL
+    date: Sep 2020 - Present
+    points:
+      - Implemented a custom internationalization (i18n) system, supporiting multiple
+        languages
+      - Integrated with external APIs including YouTube Dislike API and Sponsorblock to
+        enhance user experience
+      - Built advanced audio functionality including filters, text-to-speech, and music
+        auto-recommendation
+      - Support for multiple platforms like YouTube, Spotify, Apple Music, Twitch, SoundCloud,
+        Vimeo, and Bandcamp
+      - Developed media download capabilites with automatic format conversion to mp3 at
+        320kbps bitrate
 skills:
-- category: Languages
-  skills: Python, Rust, JavaScript, TypeScript, HTML, CSS, C, SQL, Go, C#, Java, Shell
-    Scripting
-- category: Frameworks
-  skills: React, Node.js, Tailwind CSS, Svelte, Astro, FastAPI, Django, Tauri, Actix-Web,
-    Angular, Ionic, TensorFlow, SciKit-Learn, Stripe
-- category: Developer Tools
-  skills: Git, Docker, GitHub, GitHub Actions, Netlify, Vercel, Linux
+  - category: Languages
+    skills:
+      Python, Rust, JavaScript, TypeScript, HTML, CSS, C, SQL, Go, C#, Java, Shell
+      Scripting
+  - category: Frameworks
+    skills:
+      React, Node.js, Tailwind CSS, Svelte, Astro, FastAPI, Django, Tauri, Actix-Web,
+      Angular, Ionic, TensorFlow, Stripe
+  - category: Developer Tools
+    skills: Git, Docker, GitHub, GitHub Actions, Netlify, Vercel, Linux
