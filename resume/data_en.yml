@@ -105,11 +105,11 @@ projects:
 skills:
   - category: Languages
     skills:
-      Python, Rust, JavaScript, TypeScript, HTML, CSS, C, SQL, Go, C#, Java, Shell
-      Scripting
+      Python, Rust, JavaScript, TypeScript, HTML, CSS, SQL, C, C++, Zig, Go, C#,
+      Java, Shell Scripting
   - category: Frameworks
     skills:
       React, Node.js, Tailwind CSS, Svelte, Astro, FastAPI, Django, Tauri, Actix-Web,
       Angular, Ionic, TensorFlow, Stripe
   - category: Developer Tools
-    skills: Git, Docker, GitHub, GitHub Actions, Netlify, Vercel, Linux
+    skills: Git, Docker, GitHub, GitHub Actions, Netlify, Vercel, Linux, CMake
