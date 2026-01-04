@@ -9,10 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.12",
+    "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.0",
     "@resvg/resvg-js": "^2.6.2",
-    "astro": "^5.14.1",
+    "astro": "^5.16.6",
     "satori": "^0.18.3"
   },
   "devDependencies": {
