@@ -83,7 +83,7 @@ projects:
       - Implemented a custom communication protocol between the Raspberry Pi UI and the
         PLC to exchange commands and telemetry
   - name: Freelance E-commerce
-    skills: React, TypeScript, Django, Python, PostgreSQL, Stripe
+    skills: Astro, Svelte, TypeScript, Axum, Rust, PostgreSQL, Stripe, Cloudflare R2
     date: Nov 2020 - Present
     points:
       - Develop and maintain a fully functional e-commerce website from design to deployment
