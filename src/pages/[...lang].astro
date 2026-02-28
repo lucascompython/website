@@ -42,7 +42,6 @@ const t = useTranslations(getLangFromUrl(Astro.url));
         <li>{t("interests.lowlevel")}</li>
     </ul>
 
-    <h2>🛣️ {t("journey")}</h2>
     <p>
         {t("journey.journey")}
         <br />
@@ -66,7 +65,15 @@ const t = useTranslations(getLangFromUrl(Astro.url));
         }
     </ul>
 
-    <h2>🛠️ {t("projects")}</h2>
+    <h2>
+        <a
+            href="https://github.com/lucascompython"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            🛠️ {t("projects")}
+        </a>
+    </h2>
     <ul>
         <li>
             <a href="https://github.com/lucascompython/critbot">
@@ -81,13 +88,18 @@ const t = useTranslations(getLangFromUrl(Astro.url));
             </a>
         </li>
         <li>
-            <a href="https://github.com/lucascompython/auto-spammer">
-                <strong>Auto Spammer</strong> - {t("projects.auto-spammer")}
+            <a href="https://github.com/lucascompython/macro-center">
+                <strong>Macro Center</strong> - {t("projects.macro-center")}
             </a>
         </li>
         <li>
             <a href="https://github.com/lucascompython/critlang">
                 <strong>CritLang</strong> - {t("projects.critlang")}
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/lucascompython/mipster">
+                <strong>Mipster</strong> - {t("projects.mipster")}
             </a>
         </li>
     </ul>

@@ -22,7 +22,6 @@ export const ui = {
     "interests.backend": "Backend systems and API design",
     "interests.oss": "Open Source Contributions",
     "interests.lowlevel": "Low-level programming and systems design",
-    journey: "My Journey",
     "journey.journey":
       "I started programming when I was 14 and have been hooked ever since",
     "journey.focus":
@@ -34,8 +33,10 @@ export const ui = {
     "projects.particle-simulation-title": "3D Particle Simulation",
     "projects.particle-simulation":
       "3D particle simulation written in Rust with Wgpu, Egui and Winit with native and web support",
-    "projects.auto-spammer":
+    "projects.macro-center":
       "A cross-platform visual programming tool for creating keyboard and mouse macros",
+    "projects.mipster":
+      "A MIPS simulator written in Zig with a Web and CLI interface",
     contact: "Contact",
   },
   pt: {
@@ -54,7 +55,6 @@ export const ui = {
     "interests.backend": "Sistemas Backend e design de API",
     "interests.oss": "Contribuições para Open Source",
     "interests.lowlevel": "Programação de baixo nível e design de sistemas",
-    journey: "O Meu Percurso",
     "journey.journey":
       "Comecei a programar quando tinha 14 anos e desde então estou viciado.",
     "journey.focus":
@@ -67,8 +67,10 @@ export const ui = {
     "projects.particle-simulation-title": "Simulação de partículas 3D",
     "projects.particle-simulation":
       "Simulação de partículas 3D escrita em Rust com Wgpu, Egui e Winit com suporte nativo e web",
-    "projects.auto-spammer":
+    "projects.macro-center":
       "Uma ferramenta de programação visual multiplataforma para criar macros de teclado e rato",
+    "projects.mipster":
+      "Um simulador de MIPS escrito em Zig com uma interface Web e CLI",
     contact: "Contacto",
   },
 } as const;
