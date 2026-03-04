@@ -27,16 +27,10 @@ experience:
     location: Viana do Castelo, PT
     date: Fev 2025 - June 2025
     points:
-      - Developed a dynamic internal platform using Rust, Actix-Web, Svelte, TailwindCSS
-        and MySQL/MariaDB, initially designed as a document management system, evolving
-        into a comprehensive daily tool for all employees
-      - Implemented systems for due date tracking, role-based access control, and notifications
-        to enhance workflow efficiency
-      - Developed a vacation booking system allowing employees to request time off and
-        administrators to manage company-wide vacation schedules
-      - Created communication tools for administrators to send company-wide announcements
-      - Built a flexible system where administrators can create and manage pages with
-        customizable fields for various document management needs
+      - Developed dynamic internal platform (Rust, Actix-Web, Svelte, MySQL) used company-wide
+        for document and workflow management
+      - Implemented role-based access control, notifications, and due date tracking systems
+      - Built vacation booking and internal communication tools for administrators
   - role: Machine Learning Internship
     name: Ctrl + Alt DEV
     location: Viana do Castelo, PT
@@ -59,57 +53,57 @@ projects:
     skills: Go, PostgreSQL, Nginx, React, Docker
     date: Sep 2023 - Jan 2024
     points:
-      - Selected as one of three volunteers for a special university project originating
-        from the Netherlands, aimed at enhancing the lives of autistic individuals through
-        technology
-      - Focused on resolving access issues to FreshDesk on the platform, implementing
-        solutions, deploying on the production server, and documenting the process for
-        creating new automations
-      - Performed a careful analysis of the code, configuration files, and structures
-        to identify and correct errors encountered during testing
+      - Selected as 1 of 3 volunteers for a university-led project (Netherlands) improving
+        accessibility for autistic individuals
+      - Diagnosed and resolved FreshDesk access issues; deployed fixes to production
+      - Analyzed backend codebase and configurations to identify and correct testing errors
+      - Documented automation workflows and deployment procedures
+  - name: Macro Center
+    skills: Rust, Tauri, Svelte
+    date: Mar 2023 - Present
+    points:
+      - Developed cross-platform desktop automation engine with node-based visual programming
+        interface
+      - Implemented macro execution runtime for keyboard and mouse automation with flow-based
+        logic system
+      - Designed persistent project format for saving and reusing automation workflows
+      - Built lightweight, modern UI focused on usability and performance
   - name: Automatic Cocktail Machine
     skills: Python, Raspberry Pi, FastAPI, React, PLC, Electronics
     date: Sep 2022 - May 2023
     points:
-      - Built an automatic cocktail machine with a touch HMI where users could select
-        the desired cocktail; the system transported bottles along an axle that moved
-        them under three dispensing taps for ingredient dosing
-      - Designed and 3D-printed custom mechanical parts and three peristaltic pumps (one
-        per tap)
-      - Implemented PLC control logic to coordinate axle motion and pump activation for
-        precise ingredient dispensing
-      - Developed an interactive web UI hosted on a Raspberry Pi used for both monitoring
-        and for remotely ordering cocktails
-      - Implemented a custom communication protocol between the Raspberry Pi UI and the
-        PLC to exchange commands and telemetry
+      - Built an automated cocktail machine with touchscreen HMI and motorized bottle
+        transport system
+      - Designed and 3D-printed custom mechanical parts and peristaltic pumps
+      - Implemented PLC control logic for synchronized motion and precision dispensing
+      - Developed Raspberry Pi–hosted web UI for monitoring and remote ordering
+      - Created custom communication protocol between UI and PLC
   - name: Freelance E-commerce
-    skills: Astro, Svelte, TypeScript, Axum, Rust, PostgreSQL, Stripe, Cloudflare R2
+    skills: Sveltekit, TypeScript, Axum, Rust, PostgreSQL, Stripe, S3-compatible storage
     date: Nov 2020 - Present
     points:
-      - Develop and maintain a fully functional e-commerce website from design to deployment
-      - Implement features for sales, product catalog management, and site optimization
+      - Designed, developed, and deployed full-stack e-commerce solution
+      - Implemented product management, payment processing (Stripe), and performance optimizations
+      - Managed infrastructure and object storage (Backblaze B2) for media assets
   - name: Discord Bot
     skills: Python, PostgreSQL
     date: Sep 2020 - Present
     points:
-      - Implemented a custom internationalization (i18n) system, supporiting multiple
-        languages
-      - Integrated with external APIs including YouTube Dislike API and Sponsorblock to
-        enhance user experience
-      - Built advanced audio functionality including filters, text-to-speech, and music
-        auto-recommendation
-      - Support for multiple platforms like YouTube, Spotify, Apple Music, Twitch, SoundCloud,
-        Vimeo, and Bandcamp
-      - Developed media download capabilites with automatic format conversion to mp3 at
-        320kbps bitrate
+      - Designed and maintained a feature-rich Discord bot with custom i18n system and
+        modular architecture
+      - Integrated external APIs (YouTube Dislike, SponsorBlock) and multiple streaming
+        platforms
+      - Implemented advanced audio pipeline including filters, text-to-speech, auto-recommendation,
+        and media conversion
+      - Built scalable command handling and persistent storage using PostgreSQL
 skills:
   - category: Languages
-    skills:
-      Python, Rust, JavaScript, TypeScript, HTML, CSS, SQL, C, C++, Zig, Go, C#,
-      Java, Shell Scripting
+    skills: Python, Rust, TypeScript, SQL, C, C++, Zig, Go
   - category: Frameworks
-    skills:
-      React, Node.js, Tailwind CSS, Svelte, Astro, FastAPI, Django, Tauri, Actix-Web,
-      Angular, Ionic, TensorFlow, Stripe
+    skills: React, Svelte, FastAPI, Django, Tauri, Axum, Angular, TensorFlow, Stripe
   - category: Developer Tools
-    skills: Git, Docker, GitHub, GitHub Actions, Netlify, Vercel, Linux, CMake
+    skills:
+      Git, Docker, GitHub Actions, Netlify, Vercel, Linux, CMake, MySQL, Nginx,
+      PostgreSQL,
+  - category: Spoken Languages
+    skills: Portuguese (Native), English (Fluent), French (Professional Proficiency)
