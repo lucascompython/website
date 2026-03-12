@@ -27,8 +27,8 @@ experience:
     location: Viana do Castelo, PT
     date: Fev 2025 - June 2025
     points:
-      - Developed dynamic internal platform (Rust, Actix-Web, Svelte, MySQL) used company-wide
-        for document and workflow management
+      - Developed dynamic internal platform (Rust, Actix-Web, Svelte, MySQL) meant to
+        be used company-wide for document and workflow management
       - Implemented role-based access control, notifications, and due date tracking systems
       - Built vacation booking and internal communication tools for administrators
   - role: Machine Learning Internship

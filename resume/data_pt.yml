@@ -27,8 +27,8 @@ experience:
     location: Viana do Castelo, PT
     date: Fev. 2025 - Jun. 2025
     points:
-      - Desenvolvi uma plataforma interna dinâmica (Rust, Actix-Web, Svelte, MySQL) utilizada
-        por toda a empresa para gestão de documentos e fluxos de trabalho
+      - Desenvolvi uma plataforma interna dinâmica (Rust, Actix-Web, Svelte, MySQL) projetada
+        a ser utilizada por toda a empresa para gestão de documentos e fluxos de trabalho
       - Implementei controlo de acesso baseado em funções, notificações e sistemas de
         acompanhamento de prazos
       - Criei ferramentas de marcação de férias e comunicação interna para administradores
@@ -68,7 +68,8 @@ projects:
         visual baseada em nós
       - Implementei um runtime para execução de macros de teclado e rato com sistema lógico
         baseado em fluxos
-      - Projetei um formato de projeto persistente para guardar e reutilizar fluxos de automação
+      - Projetei um formato de projeto persistente para guardar e reutilizar fluxos de
+        automação
       - Criei UI leve e moderna focada em usabilidade e performance
   - name: Máquina Automática de Cocktails
     skills: Python, Raspberry Pi, FastAPI, React, PLC, Eletrónica
