@@ -66,7 +66,6 @@ projects:
         interface
       - Implemented macro execution runtime for keyboard and mouse automation with flow-based
         logic system
-      - Designed persistent project format for saving and reusing automation workflows
       - Built lightweight, modern UI focused on usability and performance
   - name: Automatic Cocktail Machine
     skills: Python, Raspberry Pi, FastAPI, React, PLC, Electronics
@@ -78,13 +77,20 @@ projects:
       - Implemented PLC control logic for synchronized motion and precision dispensing
       - Developed Raspberry Pi–hosted web UI for monitoring and remote ordering
       - Created custom communication protocol between UI and PLC
-  - name: Freelance E-commerce
-    skills: Sveltekit, TypeScript, Axum, Rust, PostgreSQL, Stripe, S3-compatible storage
+  - name: Photography E-commerce Platform
+    skills: Sveltekit, TypeScript, Axum, Rust, PostgreSQL, Stripe, S3
     date: Nov 2020 - Present
     points:
-      - Designed, developed, and deployed full-stack e-commerce solution
-      - Implemented product management, payment processing (Stripe), and performance optimizations
-      - Managed infrastructure and object storage (Backblaze B2) for media assets
+      - Designed, built, and maintain e-commerce platform for a sports photographer handling
+        thousands of monthly transactions
+      - Engineered image pipeline converting high-res JPEGs to optimized AVIF previews
+        (~99.9% smaller) with dynamic watermarking
+      - Developed scalable media delivery using S3-compatible storage (Backblaze B2) for
+        thousands of images per event
+      - Built a full-featured backoffice with analytics, sales insights, and content management
+        tools
+      - Optimized frontend and backend for performance and SEO, achieving 100/100 Lighthouse
+        scores
   - name: Discord Bot
     skills: Python, PostgreSQL
     date: Sep 2020 - Present
@@ -92,15 +98,16 @@ projects:
       - Designed and maintained a feature-rich Discord bot with custom i18n system and
         modular architecture
       - Integrated external APIs (YouTube Dislike, SponsorBlock) and multiple streaming
-        platforms
+        platforms (Spotify, Twitch, YouTube, etc.)
       - Implemented advanced audio pipeline including filters, text-to-speech, auto-recommendation,
         and media conversion
-      - Built scalable command handling and persistent storage using PostgreSQL
 skills:
   - category: Languages
-    skills: Python, Rust, TypeScript, SQL, C, C++, Zig, Go
+    skills: Python, Rust, TypeScript, SQL, C, C++, Java, C#, Go
   - category: Frameworks
-    skills: React, Svelte, FastAPI, Django, Tauri, Axum, Angular, TensorFlow, Stripe
+    skills:
+      React, Next.js, Svelte, FastAPI, Django, Tauri, Axum, Angular, TensorFlow,
+      Stripe
   - category: Developer Tools
     skills:
       Git, Docker, GitHub Actions, Netlify, Vercel, Linux, CMake, MySQL, Nginx,

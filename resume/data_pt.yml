@@ -59,7 +59,6 @@ projects:
       - Diagnostiquei e resolvi problemas de acesso ao FreshDesk; implementei correções
         em produção
       - Analisei código backend e configurações para identificar e corrigir erros de testes
-      - Documentei fluxos de automação e procedimentos de deployment
   - name: Macro Center
     skills: Rust, Tauri, Svelte
     date: Mar. 2023 - Presente
@@ -68,8 +67,6 @@ projects:
         visual baseada em nós
       - Implementei um runtime para execução de macros de teclado e rato com sistema lógico
         baseado em fluxos
-      - Projetei um formato de projeto persistente para guardar e reutilizar fluxos de
-        automação
       - Criei UI leve e moderna focada em usabilidade e performance
   - name: Máquina Automática de Cocktails
     skills: Python, Raspberry Pi, FastAPI, React, PLC, Eletrónica
@@ -81,14 +78,20 @@ projects:
       - Implementei lógica de controlo PLC para movimentos sincronizados e dosagem precisa
       - Desenvolvi UI web alojada em Raspberry Pi para monitorização e encomenda remota
       - Criei protocolo de comunicação personalizado entre UI e PLC
-  - name: E-commerce Freelance
-    skills: Sveltekit, TypeScript, Axum, Rust, PostgreSQL, Stripe, Armazenamento S3
+  - name: Plataforma de Fotografia E-commerce
+    skills: Sveltekit, TypeScript, Axum, Rust, PostgreSQL, Stripe, S3
     date: Nov. 2020 - Presente
     points:
-      - Projetei, desenvolvi e implementei solução e-commerce full-stack
-      - Implementei gestão de produtos, processamento de pagamentos (Stripe) e otimizações
-        de performance
-      - Geri infraestrutura e armazenamento de objetos (Backblaze B2) para assets de media
+      - Concebi, desenvolvi e mantenho uma plataforma e-commerce para um fotógrafo, processando
+        milhares de transações mensais
+      - Desenvolvi um pipeline de imagens que converte JPEGs de alta resolução em previews
+        AVIF otimizados (~99,9% mais pequenos) com marca de água dinâmica
+      - Implementei distribuição escalável de media com armazenamento compatível S3 (Backblaze
+        B2) para milhares de imagens por evento
+      - Desenvolvi um backoffice completo com analytics, estatísticas de vendas e ferramentas
+        de gestão de conteúdos
+      - Otimizei frontend e backend para performance e SEO, alcançando pontuação 100/100
+        no Lighthouse
   - name: Bot Discord
     skills: Python, PostgreSQL
     date: Set. 2020 - Presente
@@ -99,13 +102,13 @@ projects:
         streaming
       - Implementei pipeline de áudio avançado incluindo filtros, text-to-speech, recomendação
         automática e conversão de media
-      - Criei sistema escalável de gestão de comandos e armazenamento persistente com
-        PostgreSQL
 skills:
   - category: Linguagens de Programação
-    skills: Python, Rust, TypeScript, SQL, C, C++, Zig, Go
+    skills: Python, Rust, TypeScript, SQL, C, C++, Java, C#, Go
   - category: Frameworks
-    skills: React, Svelte, FastAPI, Django, Tauri, Axum, Angular, TensorFlow, Stripe
+    skills:
+      React, Next.js, Svelte, FastAPI, Django, Tauri, Axum, Angular, TensorFlow,
+      Stripe
   - category: Ferramentas de Desenvolvimento
     skills:
       Git, Docker, GitHub Actions, Netlify, Vercel, Linux, CMake, MySQL, Nginx,
