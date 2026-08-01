@@ -11,7 +11,8 @@ export default defineConfig({
       theme: "dracula-soft",
     },
   },
-  site: "https://lucasdelinhares.com",
+  // site: "https://lucasdelinhares.com",
+  site: "https://lucascompython.github.io/website",
   integrations: [sitemap(), playformCompress()],
   i18n: {
     locales: ["en", "pt"],

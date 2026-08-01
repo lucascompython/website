@@ -25,7 +25,7 @@ export const ui = {
     "journey.journey":
       "I started programming when I was 14 and have been hooked ever since",
     "journey.focus":
-      "Currently, I'm focusing on graphics programming while completing my degree in Computer Science at the Polytechnic Institute of Viana do Castelo",
+      "Currently, I'm completing my degree in Computer Science at the Polytechnic Institute of Viana do Castelo",
     thoughts: "Thoughts",
     projects: "Projects",
     "projects.critbot": "A modern Discord bot with unique audio/music features",
