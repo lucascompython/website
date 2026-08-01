@@ -29,6 +29,7 @@
   linkedin: "linkedin.com/in/jake",
   linkedin_url: none,
   site: "google.com",
+  site_url: "google.com",
   github: "github.com/jake",
 ) = {
   align(center, block[
@@ -37,7 +38,11 @@
       #link("tel:" + phone)[#phone] |
     ]
     #link("mailto:" + email)[#email] |
-    #link("https://" + site)[#site]
+    #if site_url != none [
+      #link("https://" + site_url)[#site]
+    ] else [
+      #link("https://" + site)[#site]
+    ]
 
     #if linkedin_url != none [
       #link("https://" + linkedin_url)[#linkedin] |

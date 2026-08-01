@@ -5,103 +5,107 @@ personal:
   linkedin: linkedin.com/in/lucas-de-linhares
   linkedin_url: linkedin.com/in/lucas-de-linhares-269637214
   site: lucasdelinhares.com
+  site_url: lucascompython.github.io/website/
   github: github.com/lucascompython
 education:
-  - name: Instituto Politécnico de Viana do Castelo
-    degree: Licenciatura em Engenharia de Redes e Sistemas Informáticos
+  - name: Universidade Politécnica de Viana do Castelo
+    degree: Licenciatura em Engenharia de Redes e Sistemas de Computadores
     location: Viana do Castelo, PT
     date: Set. 2025 - Presente
-  - name: Instituto Politécnico de Viana do Castelo
+  - name: Universidade Politécnica de Viana do Castelo
     degree:
-      Curso Técnico Superior Profissional em Tecnologias de Sistemas de Informação
-      e Programação
+      Curso Técnico Superior Profissional em Tecnologias e Programação de Sistemas
+      de Informação
     location: Viana do Castelo, PT
     date: Set. 2023 - Mai. 2025
-  - name: Escola Secundária Monserrate
-    degree: Curso Profissional em Eletrónica, Automação e Comando
+  - name: Escola Secundária de Monserrate
+    degree: Curso Profissional de Eletrónica, Automação e Comando
     location: Viana do Castelo, PT
     date: Set. 2020 - Jul. 2023
 experience:
-  - role: Estágio em Desenvolvimento Web - Desenvolvimento de Plataforma Interna
+  - role: Investigador
+    name: Universidade Politécnica de Viana do Castelo
+    location: Viana do Castelo, PT
+    date: Jun. 2026 - Presente
+    points:
+      - Realização de uma revisão literária sobre a Arquitetura Zero Trust (ZTA) em ambientes
+        IT/OT no contexto da Indústria 5.0
+      - Desenvolvimento de uma plataforma assistida por IA para automatizar a extração
+        de palavras-chave, categorização temática, geração de matrizes de síntese e identificação
+        de lacunas de investigação utilizando LLMs
+      - Conceção de uma pipeline de processamento paralelo com cache inteligente para
+        acelerar a análise da literatura e eliminar processamento redundante
+  - role: Estagiário de Engenharia de Software
     name: JCC - Diagnostic Imaging
     location: Viana do Castelo, PT
     date: Fev. 2025 - Jun. 2025
     points:
-      - Desenvolvi uma plataforma interna dinâmica (Rust, Actix-Web, Svelte, MySQL) projetada
-        a ser utilizada por toda a empresa para gestão de documentos e fluxos de trabalho
-      - Implementei controlo de acesso baseado em funções, notificações e sistemas de
-        acompanhamento de prazos
-      - Criei ferramentas de marcação de férias e comunicação interna para administradores
-  - role: Estágio em Aprendizagem Automática
+      - Desenvolvi uma plataforma empresarial de gestão documental e de fluxos de trabalho
+        utilizando Rust, Actix-Web, Svelte e MySQL
+      - Conceção de uma arquitetura totalmente configurável para gestão de utilizadores,
+        permissões, tipos de documentos e workflows
+      - Implementação de RBAC, notificações, acompanhamento de prazos, gestão de férias
+        e ferramentas de comunicação interna
+  - role: Estagiário de Machine Learning
     name: Ctrl + Alt DEV
     location: Viana do Castelo, PT
     date: Mai. 2023 - Jul. 2023
     points:
-      - Desenvolvi um modelo de machine learning usando TensorFlow, NumPy, Pandas e SciKit-Learn
-        para prever necessidades de manutenção de máquinas de fábrica, melhorando eficiência
-        e reduzindo custos
-  - role: Estágio em Desenvolvimento Web e PLC
+      - Desenvolvi modelos de manutenção preditiva para maquinaria industrial utilizando
+        TensorFlow, Scikit-Learn, Pandas e NumPy
+  - role: Estagiário de Engenharia de Software
     name: Ctrl + Alt DEV
     location: Viana do Castelo, PT
     date: Mai. 2022 - Jul. 2022
     points:
-      - Melhorei um projeto full-stack para gestão de máquinas usando Node.js, Adonis,
-        React.js e PostgreSQL
-      - Integrei Controladores Lógicos Programáveis (PLCs) com o sistema existente
-      - Contribuí para design de funcionalidades, debugging e resolução de problemas
+      - Evolução de uma plataforma de gestão de máquinas de fábricas utilizando Node.js,
+        AdonisJS, React e PostgreSQL
+      - Integração de PLCs na plataforma existente e contribuição para o desenvolvimento
+        e depuração de funcionalidades
 projects:
-  - name: Plataforma de Automação de Apoio ao Autismo
-    skills: Go, PostgreSQL, Nginx, React, Docker
-    date: Set. 2023 - Jan. 2024
+  - name: Plataforma E-commerce de Fotografia
+    skills: Rust, Axum, SvelteKit, TypeScript, PostgreSQL, Stripe, S3
+    date: Nov. 2020 - Presente
     points:
-      - Fui selecionado como 1 de 3 voluntários para projeto universitário (Países Baixos)
-        que melhora acessibilidade para pessoas autistas
-      - Diagnostiquei e resolvi problemas de acesso ao FreshDesk; implementei correções
-        em produção
-      - Analisei código backend e configurações para identificar e corrigir erros de testes
+      - Conceção, desenvolvimento e manutenção de uma plataforma e-commerce em produção
+        que processa milhares de transações mensais
+      - Pipeline de processamento de imagens com conversão AVIF, marca de água dinâmica
+        e armazenamento escalável com S3
+      - Desenvolvimento de uma plataforma completa de administração com analítica, relatórios
+        de vendas e gestão de conteúdos
+      - Obtenção de pontuação máxima no Lighthouse através da otimização do frontend e
+        backend
   - name: Macro Center
     skills: Rust, Tauri, Svelte
     date: Mar. 2023 - Presente
     points:
-      - Desenvolvi um motor de automação desktop multiplataforma com interface de programação
-        visual baseada em nós
-      - Implementei um runtime para execução de macros de teclado e rato com sistema lógico
-        baseado em fluxos
-      - Criei UI leve e moderna focada em usabilidade e performance
-  - name: Máquina Automática de Cocktails
-    skills: Python, Raspberry Pi, FastAPI, React, PLC, Eletrónica
-    date: Set. 2022 - Mai. 2023
+      - Desenvolvi de uma plataforma multiplataforma de automação do ambiente de trabalho
+        com programação visual baseada em nós
+      - Desenvolvimento de um motor de execução de macros de elevado desempenho para automação
+        de teclado e rato
+      - Criei a biblioteca libmacrocenter, escrita em Rust e com bindings para Python,
+        Node.js e Lua, que fornece automação do ambiente de trabalho e constitui o motor
+        principal do Macro Center
+  - name: Numera
+    skills: Rust, Processamento de Imagem, Visão Computacional, Processamento Paralelo
+    date: Jul. 2026 - Presente
     points:
-      - Construí uma máquina automática de cocktails com HMI touchscreen e sistema motorizado
-        de transporte de garrafas
-      - Projetei e imprimi em 3D peças mecânicas personalizadas e bombas peristálticas
-      - Implementei lógica de controlo PLC para movimentos sincronizados e dosagem precisa
-      - Desenvolvi UI web alojada em Raspberry Pi para monitorização e encomenda remota
-      - Criei protocolo de comunicação personalizado entre UI e PLC
-  - name: Plataforma de Fotografia E-commerce
-    skills: Sveltekit, TypeScript, Axum, Rust, PostgreSQL, Stripe, S3
-    date: Nov. 2020 - Presente
+      - Desenvolvi uma aplicação de elevado desempenho para fotógrafos profissionais,
+        otimizando workflows de processamento de imagens
+      - Desenvolvi uma pipeline paralela de processamento de imagem com exportação configurável
+        para impressão, incluindo redimensionamento, ajuste de DPI, qualidade JPEG, marcas
+        de água, sobreposições, margens e transformações de imagem
+      - Pipeline de visão computacional para reconhecimento automático dos números de
+        atletas e veículos em fotografias de eventos
+      - Implementação de ferramentas automáticas de organização de ficheiros para agrupar
+        e estruturar milhares de imagens com base nos números reconhecidos ou atribuídos
+  - name: Plataforma de Automação para Apoio ao Autismo
+    skills: Go, PostgreSQL, Docker, React, Nginx
+    date: Set. 2023 - Jan. 2024
     points:
-      - Concebi, desenvolvi e mantenho uma plataforma e-commerce para um fotógrafo, processando
-        milhares de transações mensais
-      - Desenvolvi um pipeline de imagens que converte JPEGs de alta resolução em previews
-        AVIF otimizados (~99,9% mais pequenos) com marca de água dinâmica
-      - Implementei distribuição escalável de media com armazenamento compatível S3 (Backblaze
-        B2) para milhares de imagens por evento
-      - Desenvolvi um backoffice completo com analytics, estatísticas de vendas e ferramentas
-        de gestão de conteúdos
-      - Otimizei frontend e backend para performance e SEO, alcançando pontuação 100/100
-        no Lighthouse
-  - name: Bot Discord
-    skills: Python, PostgreSQL
-    date: Set. 2020 - Presente
-    points:
-      - Projetei e mantenho um bot de Discord com múltiplas funcionalidades, sistema i18n
-        personalizado e arquitetura modular
-      - Integrei APIs externas (YouTube Dislike, SponsorBlock) e várias plataformas de
-        streaming
-      - Implementei pipeline de áudio avançado incluindo filtros, text-to-speech, recomendação
-        automática e conversão de media
+      - Selecionado como um dos três voluntários para um projeto internacional de acessibilidade
+      - Diagnóstico de problemas em produção, implementação de correções e documentação
+        de procedimentos de deployment
 skills:
   - category: Linguagens de Programação
     skills: Python, Rust, TypeScript, SQL, C, C++, Java, C#, Go
@@ -113,5 +117,5 @@ skills:
     skills:
       Git, Docker, GitHub Actions, Netlify, Vercel, Linux, CMake, MySQL, Nginx,
       PostgreSQL
-  - category: Línguas Faladas
+  - category: Idiomas
     skills: Português (Nativo), Inglês (Fluente), Francês (Proficiência Profissional)

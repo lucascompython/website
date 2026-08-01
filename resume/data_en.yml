@@ -5,13 +5,14 @@ personal:
   linkedin: linkedin.com/in/lucas-de-linhares
   linkedin_url: linkedin.com/in/lucas-de-linhares-269637214
   site: lucasdelinhares.com
+  site_url: lucascompython.github.io/website/
   github: github.com/lucascompython
 education:
-  - name: Polytechnic Institute of Viana do Castelo
+  - name: Polytechnic University of Viana do Castelo
     degree: Bachelor's Degree in Network and Computer Systems Engineering
     location: Viana do Castelo, PT
     date: Sep. 2025 - Present
-  - name: Polytechnic Institute of Viana do Castelo
+  - name: Polytechnic University of Viana do Castelo
     degree:
       Higher Professional Technical Course in Information Systems Technologies
       and Programming
@@ -20,87 +21,86 @@ education:
   - name: Monserrate Secondary School
     degree: Professional Course in Electronics, Automation and Control
     location: Viana do Castelo, PT
-    date: Sep. 2020 - Jul 2023
+    date: Sep. 2020 - Jul. 2023
 experience:
-  - role: Web Development Internship - Internal Platform Development
+  - role: Researcher
+    name: Polytechnic University of Viana do Castelo
+    location: Viana do Castelo, PT
+    date: Jun. 2026 - Present
+    points:
+      - Conducting a systematic literature review on Zero Trust Architecture (ZTA) in
+        IT/OT environments within Industry 5.0
+      - Developed an AI-assisted platform that automates keyword extraction, thematic
+        clustering, synthesis matrix generation, and research gap identification using
+        LLMs
+      - Designed a parallel processing pipeline with intelligent caching to accelerate
+        literature analysis and reduce redundant LLM processing
+  - role: Software Engineer Intern
     name: JCC - Diagnostic Imaging
     location: Viana do Castelo, PT
-    date: Fev 2025 - June 2025
+    date: Feb. 2025 - Jun. 2025
     points:
-      - Developed dynamic internal platform (Rust, Actix-Web, Svelte, MySQL) meant to
-        be used company-wide for document and workflow management
-      - Implemented role-based access control, notifications, and due date tracking systems
-      - Built vacation booking and internal communication tools for administrators
-  - role: Machine Learning Internship
+      - Developed a company-wide document management and workflow platform using Rust,
+        Actix-Web, Svelte and MySQL
+      - Designed a fully configurable architecture for users, permissions, document types
+        and workflows
+      - Implemented RBAC, notifications, due-date tracking, vacation management and internal
+        communication features
+  - role: Machine Learning Intern
     name: Ctrl + Alt DEV
     location: Viana do Castelo, PT
-    date: May. 2023 - July 2023
+    date: May 2023 - Jul. 2023
     points:
-      - Developed a machine learning model using TensorFlow, NumPy, Pandas and SciKit-Learn
-        to predict maintenance needs of factory machines, improving efficiency and reducing
-        costs
-  - role: Web Development and PLC Internship
+      - Developed predictive maintenance models using TensorFlow, Scikit-Learn, Pandas
+        and NumPy for industrial machinery
+  - role: Software Engineer Intern
     name: Ctrl + Alt DEV
     location: Viana do Castelo, PT
-    date: May 2022 - July 2022
+    date: May 2022 - Jul. 2022
     points:
-      - Enhanced full-stack project for machine management using Node.js, Adonis, React.js
-        and PostgreSQL
-      - Integrated Programmable Logic Controllers (PLCs) with the existing system
-      - Contributed to feature design, debugging, and troubleshooting
+      - Enhanced a machine management platform using Node.js, AdonisJS, React and PostgreSQL
+      - Integrated PLCs with the existing platform and contributed to feature development
+        and debugging
 projects:
-  - name: Autism Support Automation Platform
-    skills: Go, PostgreSQL, Nginx, React, Docker
-    date: Sep 2023 - Jan 2024
+  - name: Photography E-commerce Platform
+    skills: Rust, Axum, SvelteKit, TypeScript, PostgreSQL, Stripe, S3
+    date: Nov. 2020 - Present
     points:
-      - Selected as 1 of 3 volunteers for a university-led project (Netherlands) improving
-        accessibility for autistic individuals
-      - Diagnosed and resolved FreshDesk access issues; deployed fixes to production
-      - Analyzed backend codebase and configurations to identify and correct testing errors
-      - Documented automation workflows and deployment procedures
+      - Designed, built and maintain a production e-commerce platform handling thousands
+        of monthly transactions
+      - Developed an optimized media pipeline with AVIF conversion, dynamic watermarking
+        and scalable S3-compatible storage
+      - Built a complete administration platform with analytics, sales reporting and content
+        management
+      - Achieved perfect Lighthouse scores through frontend and backend optimization
   - name: Macro Center
     skills: Rust, Tauri, Svelte
-    date: Mar 2023 - Present
+    date: Mar. 2023 - Present
     points:
-      - Developed cross-platform desktop automation engine with node-based visual programming
-        interface
-      - Implemented macro execution runtime for keyboard and mouse automation with flow-based
-        logic system
-      - Built lightweight, modern UI focused on usability and performance
-  - name: Automatic Cocktail Machine
-    skills: Python, Raspberry Pi, FastAPI, React, PLC, Electronics
-    date: Sep 2022 - May 2023
+      - Developed a cross-platform desktop automation platform with node-based visual
+        programming
+      - Built a high-performance macro execution engine for keyboard and mouse automation
+      - Developed libmacrocenter, a Rust library with Python, Node.js, and Lua bindings
+        for desktop automation, powering Macro Center.
+  - name: Numera
+    skills: Rust, Image Processing, Computer Vision, Parallel Processing
+    date: Jul. 2026 - Present
     points:
-      - Built an automated cocktail machine with touchscreen HMI and motorized bottle
-        transport system
-      - Designed and 3D-printed custom mechanical parts and peristaltic pumps
-      - Implemented PLC control logic for synchronized motion and precision dispensing
-      - Developed Raspberry Pi–hosted web UI for monitoring and remote ordering
-      - Created custom communication protocol between UI and PLC
-  - name: Photography E-commerce Platform
-    skills: Sveltekit, TypeScript, Axum, Rust, PostgreSQL, Stripe, S3
-    date: Nov 2020 - Present
+      - Developed a high-performance desktop application for professional photographers,
+        optimizing post-event image processing workflows
+      - Built a parallel image processing pipeline supporting configurable print-ready
+        exports with resizing, DPI adjustment, JPEG quality, watermarks, overlays, borders,
+        and image transformations
+      - Developing a computer vision pipeline to automatically recognize athlete and vehicle
+        identification numbers from event photographs for automated image organization
+      - Implemented automated file organization tools that group and structure thousands
+        of images based on recognized or assigned event numbers
+  - name: Autism Support Automation Platform
+    skills: Go, PostgreSQL, Docker, React, Nginx
+    date: Sep. 2023 - Jan. 2024
     points:
-      - Designed, built, and maintain e-commerce platform for a sports photographer handling
-        thousands of monthly transactions
-      - Engineered image pipeline converting high-res JPEGs to optimized AVIF previews
-        (~99.9% smaller) with dynamic watermarking
-      - Developed scalable media delivery using S3-compatible storage (Backblaze B2) for
-        thousands of images per event
-      - Built a full-featured backoffice with analytics, sales insights, and content management
-        tools
-      - Optimized frontend and backend for performance and SEO, achieving 100/100 Lighthouse
-        scores
-  - name: Discord Bot
-    skills: Python, PostgreSQL
-    date: Sep 2020 - Present
-    points:
-      - Designed and maintained a feature-rich Discord bot with custom i18n system and
-        modular architecture
-      - Integrated external APIs (YouTube Dislike, SponsorBlock) and multiple streaming
-        platforms (Spotify, Twitch, YouTube, etc.)
-      - Implemented advanced audio pipeline including filters, text-to-speech, auto-recommendation,
-        and media conversion
+      - Selected as 1 of 3 volunteers for an international accessibility project
+      - Diagnosed production issues, implemented fixes and documented deployment workflows
 skills:
   - category: Languages
     skills: Python, Rust, TypeScript, SQL, C, C++, Java, C#, Go
@@ -111,6 +111,6 @@ skills:
   - category: Developer Tools
     skills:
       Git, Docker, GitHub Actions, Netlify, Vercel, Linux, CMake, MySQL, Nginx,
-      PostgreSQL,
+      PostgreSQL
   - category: Spoken Languages
     skills: Portuguese (Native), English (Fluent), French (Professional Proficiency)

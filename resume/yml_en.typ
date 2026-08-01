@@ -1,4 +1,4 @@
-#import "template.typ": resume, header, resume_heading, edu_item, exp_item, project_item, skill_item
+#import "template.typ": edu_item, exp_item, header, project_item, resume, resume_heading, skill_item
 
 
 #let yml_personal(d) = {
@@ -9,7 +9,8 @@
     linkedin: d.linkedin,
     linkedin_url: d.linkedin_url,
     site: d.site,
-    github: d.github
+    site_url: d.site_url,
+    github: d.github,
   )
 }
 
@@ -33,7 +34,7 @@
       name: exp.name,
       location: exp.location,
       date: exp.date,
-      .. exp.points
+      ..exp.points,
     )
   }
 }
@@ -45,7 +46,7 @@
       name: proj.name,
       skills: proj.skills,
       date: proj.date,
-      ..proj.points
+      ..proj.points,
     )
   }
 }
@@ -55,7 +56,7 @@
   for skill in d {
     skill_item(
       category: skill.category,
-      skills: skill.skills
+      skills: skill.skills,
     )
   }
 }
