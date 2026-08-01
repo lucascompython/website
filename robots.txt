@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lucasdelinhares.com/sitemap-index.xml
+Sitemap: https://lucascompython.github.io/sitemap-index.xml
