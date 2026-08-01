@@ -37,6 +37,11 @@ export const ui = {
       "A cross-platform visual programming tool for creating keyboard and mouse macros",
     "projects.mipster":
       "A MIPS simulator written in Zig with a Web and CLI interface",
+    "projects.numera":
+      "A high-performance desktop application for professional photographers, optimizing post-event image processing workflows",
+    "projects.bsync":
+      "A peer-to-peer clipboard synchronization tool written in Rust with ambitions to have feature parity with KDE Connect",
+
     contact: "Contact",
   },
   pt: {
@@ -71,6 +76,10 @@ export const ui = {
       "Uma ferramenta de programação visual multiplataforma para criar macros de teclado e rato",
     "projects.mipster":
       "Um simulador de MIPS escrito em Zig com uma interface Web e CLI",
+    "projects.numera":
+      "Uma aplicação desktop de alto desempenho para fotógrafos profissionais, otimizando fluxos de trabalho de processamento de imagem pós-evento",
+    "projects.bsync":
+      "Uma ferramenta de sincronização de clipboard peer-to-peer escrita em Rust com ambições de ter paridade de funcionalidades com o KDE Connect",
     contact: "Contacto",
   },
 } as const;
