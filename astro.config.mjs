@@ -12,7 +12,8 @@ export default defineConfig({
     },
   },
   // site: "https://lucasdelinhares.com",
-  site: "https://lucascompython.github.io/website",
+  site: "https://lucascompython.github.io",
+  base: "/website",
   integrations: [sitemap(), playformCompress()],
   i18n: {
     locales: ["en", "pt"],
