@@ -26,7 +26,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
     <p>
         {t("about")}
     </p>
-    <a id="resume" href={t("resume-path")}>📄 {t("resume")}</a>
+    <a id="resume" href={`${import.meta.env.BASE_URL}/${t("resume-path").slice(1)}`}>📄 {t("resume")}</a>
 
     <h2>👨‍💻 {t("about-me")}</h2>
     <p>
@@ -48,7 +48,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
         {t("journey.focus")}
     </p>
     <h2>
-        <a href="blog/">
+        <a href={`${import.meta.env.BASE_URL}/blog/`}>
             📝 {t("thoughts")}
         </a>
     </h2>
@@ -56,7 +56,7 @@ const t = useTranslations(getLangFromUrl(Astro.url));
         {
             posts.map((post) => (
                 <li>
-                    <a href={`/blog/${post.id}/`}>
+                    <a href={`${import.meta.env.BASE_URL}/blog/${post.id}/`}>
                         <FormattedDate date={post.data.pubDate} /> -
                         <b>{post.data.title}</b>
                     </a>

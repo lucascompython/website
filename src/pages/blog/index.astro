@@ -17,7 +17,7 @@ const posts = (await getCollection("blog")).sort(
         <BaseHead
             title={SITE_TITLE}
             description={SITE_DESCRIPTION}
-            image={"/blog.png"}
+            image={`${import.meta.env.BASE_URL}/blog.png`}
         />
     </head>
     <body>
@@ -29,7 +29,7 @@ const posts = (await getCollection("blog")).sort(
                     {
                         posts.map((post) => (
                             <li>
-                                <a href={`/blog/${post.id}/`}>
+                                <a href={`${import.meta.env.BASE_URL}/blog/${post.id}/`}>
                                     <FormattedDate date={post.data.pubDate} /> -
                                     <b>{post.data.title}</b>
                                 </a>
