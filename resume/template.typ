@@ -6,11 +6,14 @@
 
   set page(
     paper: "a4",
-    margin: (x: 0.15in, y: 0.15in),
+    // margin: (x: 14mm, y: 12mm),
+    margin: (x: 0.13in, y: 0.16in),
+    numbering: "1 / 1",
+    footer-descent: -1mm,
   )
 
   set text(
-    size: 10pt,
+    size: 11pt,
     font: "New Computer Modern",
   )
 
@@ -71,6 +74,7 @@
   date: "Aug. 1600 - May 1750",
 ) = {
   set block(above: 0.7em, below: 1em)
+  set text(size: 0.91em)
   pad(left: 1em, right: 0.5em, grid(
     columns: (3fr, 1fr),
     align(left)[
@@ -116,7 +120,13 @@
 ) = {
   set block(above: 0.7em, below: 1em)
   pad(left: 1em, right: 0.5em, box[
-    *#name* | _#skills _ #h(1fr) #date
+    #grid(
+      columns: (1fr, auto),
+      column-gutter: 1em,
+      [*#name*], align(right)[#date],
+    )
+    #v(-2pt)
+    #text(size: 0.92em)[_#skills _]
     #list(..points)
   ])
 }

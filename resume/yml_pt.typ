@@ -52,7 +52,7 @@
 }
 
 #let yml_skills(d) = {
-  resume_heading[Habilidades Técnicas]
+  resume_heading[Competências Técnicas]
   for skill in d {
     skill_item(
       category: skill.category,
@@ -67,6 +67,7 @@
   yml_personal(data.personal)
   yml_education(data.education)
   yml_experience(data.experience)
+  pagebreak()
   yml_projects(data.projects)
   yml_skills(data.skills)
 }

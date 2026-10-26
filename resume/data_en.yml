@@ -23,18 +23,31 @@ education:
     location: Viana do Castelo, PT
     date: Sep. 2020 - Jul. 2023
 experience:
-  - role: Researcher
+  - role: Development Contributor
+    name: MyIPVC - Polytechnic University of Viana do Castelo
+    location: Viana do Castelo, PT
+    date: Oct. 2026 - Present
+    points:
+      - Reviewed application security and maintainability, documenting authentication,
+        authorization and data exposure issues with reproduction steps and proposed fixes
+      - Updated the Node.js backend and its dependencies, reducing vulnerabilities reported
+        by the npm audit from 78 to 0 in the updated version
+      - Adapted authentication and file storage to the new APIs, preserving mobile application
+        compatibility and fixing functional issues
+  - role: Research Grant Holder
     name: Polytechnic University of Viana do Castelo
     location: Viana do Castelo, PT
-    date: Jun. 2026 - Present
+    date: Jun. 2026 - Aug. 2026
     points:
-      - Conducting a systematic literature review on Zero Trust Architecture (ZTA) in
-        IT/OT environments within Industry 5.0
+      - Conducted a literature review on Zero Trust Architecture (ZTA) in IT/OT environments
+        within Industry 5.0
       - Developed an AI-assisted platform that automates keyword extraction, thematic
         clustering, synthesis matrix generation, and research gap identification using
         LLMs
       - Designed a parallel processing pipeline with intelligent caching to accelerate
         literature analysis and reduce redundant LLM processing
+      - Ongoing collaboration on the preparation of a scientific manuscript after the
+        grant ended.
   - role: Software Engineer Intern
     name: JCC - Diagnostic Imaging
     location: Viana do Castelo, PT
@@ -51,59 +64,101 @@ experience:
     location: Viana do Castelo, PT
     date: May 2023 - Jul. 2023
     points:
-      - Developed predictive maintenance models using TensorFlow, Scikit-Learn, Pandas
-        and NumPy for industrial machinery
+      - Developed predictive maintenance prototypes for industrial machinery using TensorFlow,
+        Scikit-Learn, Pandas and NumPy, comparing threshold rules, Random Forest and neural
+        networks
+      - Extracted, filtered and preprocessed real machine data from the MES PostgreSQL
+        database, separating training and test sets for model evaluation
+      - Developed a FastAPI service to communicate with the MES and display alerts to
+        operators
   - role: Software Engineer Intern
     name: Ctrl + Alt DEV
     location: Viana do Castelo, PT
     date: May 2022 - Jul. 2022
     points:
-      - Enhanced a machine management platform using Node.js, AdonisJS, React and PostgreSQL
-      - Integrated PLCs with the existing platform and contributed to feature development
-        and debugging
+      - Contributed to an industrial Manufacturing Execution System (MES) using Node.js,
+        TypeScript, AdonisJS, React and PostgreSQL
+      - Investigated PLC integration with the platform, evaluating Siemens S7, OpenPLC
+        and SCADA and testing JavaScript execution triggered by a virtual PLC
+      - Diagnosed and fixed issues in a Java connector for SAP S/4HANA communication,
+        alongside platform feature development and debugging
+      - Started developing a Raspberry Pi remote-controlled vehicle, planning Python GPIO
+        control, ultrasonic and proximity sensors and camera-based vision with OpenCV
 projects:
+  - name: Automatic Cocktail Machine (Final Vocational Project)
+    skills: Python, Raspberry Pi, PLC, GPIO, HMI, FastAPI, React, 3D Printing
+    date: Sep. 2022 - May 2023
+    points:
+      - Integrated a PLC, Raspberry Pi, HMI and motor control into an automatic cocktail
+        preparation machine developed as a team project
+      - Implemented control logic and GPIO communication between the Raspberry Pi and
+        PLC to coordinate movement and liquid dispensing with peristaltic pumps
+      - Developed a web interface with React and FastAPI and designed custom mechanical
+        components for 3D printing
+  - name: Mipster
+    skills: Zig, MIPS Assembly, WebAssembly
+    date: Oct. 2025 - Jan. 2026
+    points:
+      - Developed a simulator for a subset of the MIPS architecture in Zig, with registers,
+        memory and execution of arithmetic, logical and control flow instructions
+      - Implemented Assembly parsing and basic system calls, including input and output
+        operations
+      - Built native and WebAssembly versions with an interactive web editor and syntax
+        highlighting
   - name: Photography E-commerce Platform
     skills: Rust, Axum, SvelteKit, TypeScript, PostgreSQL, Stripe, S3
     date: Nov. 2020 - Present
     points:
-      - Designed, built and maintain a production e-commerce platform handling thousands
-        of monthly transactions
+      - Designed, built and continue to maintain a production e-commerce platform handling
+        thousands of monthly transactions
       - Developed an optimized media pipeline with AVIF conversion, dynamic watermarking
         and scalable S3-compatible storage
-      - Built a complete administration platform with analytics, sales reporting and content
-        management
-      - Achieved perfect Lighthouse scores through frontend and backend optimization
+      - Built administration, analytics and sales reporting tools and optimized the frontend
+        and backend to achieve perfect Lighthouse scores
   - name: Macro Center
     skills: Rust, Tauri, Svelte
     date: Mar. 2023 - Present
     points:
-      - Developed a cross-platform desktop automation platform with node-based visual
-        programming
-      - Built a high-performance macro execution engine for keyboard and mouse automation
+      - Developed a cross-platform application with node-based visual programming and
+        a macro execution engine for keyboard and mouse automation
       - Developed libmacrocenter, a Rust library with Python, Node.js, and Lua bindings
         for desktop automation, powering Macro Center.
   - name: Numera
     skills: Rust, Image Processing, Computer Vision, Parallel Processing
     date: Jul. 2026 - Present
     points:
-      - Developed a high-performance desktop application for professional photographers,
-        optimizing post-event image processing workflows
-      - Built a parallel image processing pipeline supporting configurable print-ready
-        exports with resizing, DPI adjustment, JPEG quality, watermarks, overlays, borders,
-        and image transformations
-      - Developing a computer vision pipeline to automatically recognize athlete and vehicle
-        identification numbers from event photographs for automated image organization
-      - Implemented automated file organization tools that group and structure thousands
-        of images based on recognized or assigned event numbers
+      - Developed a Rust application with parallel image processing and configurable print-ready
+        exports, including DPI adjustments, watermarks and overlays
+      - Developing a computer vision pipeline to recognize athlete and vehicle numbers
+        in event photographs
+      - Implemented tools to automatically organize thousands of photographs by recognized
+        or assigned numbers
   - name: Autism Support Automation Platform
     skills: Go, PostgreSQL, Docker, React, Nginx
     date: Sep. 2023 - Jan. 2024
     points:
-      - Selected as 1 of 3 volunteers for an international accessibility project
-      - Diagnosed production issues, implemented fixes and documented deployment workflows
+      - Selected as one of three volunteers for a university accessibility project in
+        the Netherlands
+      - Diagnosed and resolved Freshdesk access issues, deploying fixes to production
+      - Analyzed backend code and configuration to identify and fix test failures
+      - Documented automation workflows and deployment procedures
+  - name: CritBot
+    skills: Python, PostgreSQL
+    date: Sep. 2020 - Present
+    points:
+      - Designed and continue to maintain a Discord bot with a modular architecture and
+        a custom internationalization (i18n) system in Portuguese and English
+      - Integrated external APIs, including Return YouTube Dislike and SponsorBlock, and
+        support for multiple streaming platforms
+      - Implemented audio features including filters, text-to-speech, automatic music
+        recommendations and media file conversion
+      - Developed a system for managing text and slash commands with persistent storage
+        in PostgreSQL
 skills:
   - category: Languages
-    skills: Python, Rust, TypeScript, SQL, C, C++, Java, C#, Go
+    skills: C, C++, Python, Rust, Zig, TypeScript, SQL, Java, C#, Go
+  - category: Systems and Automation
+    skills: PLC, Raspberry Pi, GPIO, HMI, prototyping and 3D printing
   - category: Frameworks
     skills:
       React, Next.js, Svelte, FastAPI, Django, Tauri, Axum, Angular, TensorFlow,

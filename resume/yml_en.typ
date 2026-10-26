@@ -67,6 +67,7 @@
   yml_personal(data.personal)
   yml_education(data.education)
   yml_experience(data.experience)
+  pagebreak()
   yml_projects(data.projects)
   yml_skills(data.skills)
 }

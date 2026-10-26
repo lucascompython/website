@@ -23,18 +23,31 @@ education:
     location: Viana do Castelo, PT
     date: Set. 2020 - Jul. 2023
 experience:
-  - role: Investigador
+  - role: Colaborador de Desenvolvimento
+    name: MyIPVC - Universidade Politécnica de Viana do Castelo
+    location: Viana do Castelo, PT
+    date: Out. 2026 - Presente
+    points:
+      - Analisei a segurança e manutenção da aplicação, documentando falhas de autenticação,
+        autorização e exposição de dados, com procedimentos de reprodução e propostas
+        de correção
+      - Atualizei o backend Node.js e as suas dependências, reduzindo de 78 para 0 as
+        vulnerabilidades reportadas pela auditoria npm na versão atualizada
+      - Adaptei a autenticação e o armazenamento de ficheiros às novas APIs, preservando
+        a compatibilidade com a aplicação móvel e corrigindo erros funcionais
+  - role: Bolseiro de Investigação
     name: Universidade Politécnica de Viana do Castelo
     location: Viana do Castelo, PT
-    date: Jun. 2026 - Presente
+    date: Jun. 2026 - Ago. 2026
     points:
-      - Realização de uma revisão literária sobre a Arquitetura Zero Trust (ZTA) em ambientes
-        IT/OT no contexto da Indústria 5.0
+      - Realização de uma revisão da literatura sobre a Arquitetura Zero Trust (ZTA) em
+        ambientes IT/OT no contexto da Indústria 5.0
       - Desenvolvimento de uma plataforma assistida por IA para automatizar a extração
         de palavras-chave, categorização temática, geração de matrizes de síntese e identificação
         de lacunas de investigação utilizando LLMs
       - Conceção de uma pipeline de processamento paralelo com cache inteligente para
         acelerar a análise da literatura e eliminar processamento redundante
+      - Colaboração na preparação de artigo científico em curso após o término da bolsa.
   - role: Estagiário de Engenharia de Software
     name: JCC - Diagnostic Imaging
     location: Viana do Castelo, PT
@@ -51,18 +64,48 @@ experience:
     location: Viana do Castelo, PT
     date: Mai. 2023 - Jul. 2023
     points:
-      - Desenvolvi modelos de manutenção preditiva para maquinaria industrial utilizando
-        TensorFlow, Scikit-Learn, Pandas e NumPy
+      - Desenvolvi protótipos de manutenção preditiva para maquinaria industrial com TensorFlow,
+        Scikit-Learn, Pandas e NumPy, comparando regras de limiar, Random Forest e redes
+        neuronais
+      - Extraí, filtrei e pré-processei dados reais das máquinas a partir da base de dados
+        PostgreSQL do MES, separando conjuntos de treino e teste para avaliação dos modelos
+      - Desenvolvi uma API com FastAPI para comunicação com o MES e apresentação de avisos
+        aos operadores
   - role: Estagiário de Engenharia de Software
     name: Ctrl + Alt DEV
     location: Viana do Castelo, PT
     date: Mai. 2022 - Jul. 2022
     points:
-      - Evolução de uma plataforma de gestão de máquinas de fábricas utilizando Node.js,
-        AdonisJS, React e PostgreSQL
-      - Integração de PLCs na plataforma existente e contribuição para o desenvolvimento
-        e depuração de funcionalidades
+      - Contribuí para a evolução de uma plataforma MES de gestão da produção industrial
+        com Node.js, TypeScript, AdonisJS, React e PostgreSQL
+      - Investiguei a integração de PLCs com a plataforma, avaliando Siemens S7, OpenPLC
+        e SCADA e testando a execução de JavaScript a partir de um PLC virtual
+      - Diagnostiquei e corrigi problemas num conector Java para comunicação com SAP S/4HANA,
+        contribuindo também para o desenvolvimento e depuração de funcionalidades da plataforma
+      - Iniciei o desenvolvimento de um veículo telecomandado com Raspberry Pi, prevendo
+        controlo por GPIO em Python, sensores ultrassónicos e de proximidade e visão por
+        câmara com OpenCV
 projects:
+  - name: Máquina Automática de Cocktails (PAP)
+    skills: Python, Raspberry Pi, PLC, GPIO, HMI, FastAPI, React, Impressão 3D
+    date: Set. 2022 - Mai. 2023
+    points:
+      - Integrei PLC, Raspberry Pi, HMI e acionamento de motores numa máquina automática
+        de preparação de cocktails, desenvolvida em equipa
+      - Implementei lógica de controlo e comunicação por GPIO entre Raspberry Pi e PLC
+        para coordenar movimentos e dosagem com bombas peristálticas
+      - Desenvolvi uma interface web com React e FastAPI e projetei componentes mecânicos
+        personalizados para impressão 3D
+  - name: Mipster
+    skills: Zig, Assembly MIPS, WebAssembly
+    date: Out. 2025 - Jan. 2026
+    points:
+      - Desenvolvi um simulador de um subconjunto da arquitetura MIPS em Zig, com registos,
+        memória e execução de instruções aritméticas, lógicas e de controlo de fluxo
+      - Implementei análise de código Assembly e chamadas de sistema básicas, incluindo
+        operações de entrada e saída
+      - Disponibilizei versões nativa e WebAssembly, com um editor web interativo e realce
+        de sintaxe
   - name: Plataforma E-commerce de Fotografia
     skills: Rust, Axum, SvelteKit, TypeScript, PostgreSQL, Stripe, S3
     date: Nov. 2020 - Presente
@@ -71,18 +114,14 @@ projects:
         que processa milhares de transações mensais
       - Pipeline de processamento de imagens com conversão AVIF, marca de água dinâmica
         e armazenamento escalável com S3
-      - Desenvolvimento de uma plataforma completa de administração com analítica, relatórios
-        de vendas e gestão de conteúdos
-      - Obtenção de pontuação máxima no Lighthouse através da otimização do frontend e
-        backend
+      - Desenvolvi ferramentas de administração, analítica e relatórios de vendas e otimizei
+        o frontend e backend para obter pontuação máxima no Lighthouse
   - name: Macro Center
     skills: Rust, Tauri, Svelte
     date: Mar. 2023 - Presente
     points:
-      - Desenvolvi de uma plataforma multiplataforma de automação do ambiente de trabalho
-        com programação visual baseada em nós
-      - Desenvolvimento de um motor de execução de macros de elevado desempenho para automação
-        de teclado e rato
+      - Desenvolvi uma plataforma multiplataforma com programação visual baseada em nós
+        e um motor de execução de macros para automação de teclado e rato
       - Criei a biblioteca libmacrocenter, escrita em Rust e com bindings para Python,
         Node.js e Lua, que fornece automação do ambiente de trabalho e constitui o motor
         principal do Macro Center
@@ -90,30 +129,45 @@ projects:
     skills: Rust, Processamento de Imagem, Visão Computacional, Processamento Paralelo
     date: Jul. 2026 - Presente
     points:
-      - Desenvolvi uma aplicação de elevado desempenho para fotógrafos profissionais,
-        otimizando workflows de processamento de imagens
-      - Desenvolvi uma pipeline paralela de processamento de imagem com exportação configurável
-        para impressão, incluindo redimensionamento, ajuste de DPI, qualidade JPEG, marcas
-        de água, sobreposições, margens e transformações de imagem
-      - Pipeline de visão computacional para reconhecimento automático dos números de
-        atletas e veículos em fotografias de eventos
-      - Implementação de ferramentas automáticas de organização de ficheiros para agrupar
-        e estruturar milhares de imagens com base nos números reconhecidos ou atribuídos
+      - Desenvolvi uma aplicação em Rust com processamento paralelo de imagens e exportação
+        configurável para impressão, incluindo ajustes de DPI, marcas de água e sobreposições
+      - Desenvolvimento de uma pipeline de visão computacional para reconhecimento dos
+        números de atletas e veículos em fotografias de eventos
+      - Implementei ferramentas de organização automática de milhares de fotografias com
+        base nos números atribuídos
   - name: Plataforma de Automação para Apoio ao Autismo
     skills: Go, PostgreSQL, Docker, React, Nginx
     date: Set. 2023 - Jan. 2024
     points:
-      - Selecionado como um dos três voluntários para um projeto internacional de acessibilidade
-      - Diagnóstico de problemas em produção, implementação de correções e documentação
-        de procedimentos de deployment
+      - Um de três voluntários selecionados num projeto universitário de acessibilidade
+        nos Países Baixos
+      - Diagnostiquei e resolvi problemas de acesso ao Freshdesk, aplicando correções
+        em produção
+      - Analisei código backend e configurações para identificar e corrigir erros nos
+        testes
+      - Documentei fluxos de automação e procedimentos de deployment
+  - name: CritBot
+    skills: Python, PostgreSQL
+    date: Set. 2020 - Presente
+    points:
+      - Projetei e mantenho um bot de Discord com arquitetura modular e um sistema próprio
+        de internacionalização (i18n) em português e inglês
+      - Integrei APIs externas, incluindo Return YouTube Dislike e SponsorBlock e suporte
+        para várias plataformas streaming
+      - Implementei funcionalidades de áudio com filtros, síntese de voz (text-to-speech),
+        recomendação automática de música e conversão de ficheiros multimédia
+      - Desenvolvi um sistema de gestão de comandos de texto e slash commands, com armazenamento
+        persistente em PostgreSQL
 skills:
   - category: Linguagens de Programação
-    skills: Python, Rust, TypeScript, SQL, C, C++, Java, C#, Go
+    skills: C, C++, Python, Rust, Zig, TypeScript, SQL, Java, C#, Go
+  - category: Sistemas e Automação
+    skills: PLC, Raspberry Pi, GPIO, HMI, prototipagem e impressão 3D
   - category: Frameworks
     skills:
       React, Next.js, Svelte, FastAPI, Django, Tauri, Axum, Angular, TensorFlow,
       Stripe
-  - category: Ferramentas de Desenvolvimento
+  - category: Ferramentas
     skills:
       Git, Docker, GitHub Actions, Netlify, Vercel, Linux, CMake, MySQL, Nginx,
       PostgreSQL
